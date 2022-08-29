@@ -7,7 +7,7 @@
     --white: #ffffff;
     --dark: #000000;
     --dark-gray: #515050ae;
-    --light-gray: #87878f;
+    --light-gray: #6b6b6b;
 
     --bg:#e7eaf2;
     --blur:80px;
@@ -296,7 +296,7 @@ ul.side__navbar a li ion-icon
 
 
 /* make sidebar responsive */
-@media screen and (max-width:500px){
+@media screen and (max-width:700px){
     .logo__txt
     {
         display: none;
