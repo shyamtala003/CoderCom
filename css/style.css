@@ -533,6 +533,7 @@ ul.side__navbar a li ion-icon
     text-transform: capitalize;
     border-radius: 18px;
     box-shadow: 0px 0px 50px var(--primary);
+    white-space: nowrap;
 }
 
 .btn-register:hover
@@ -540,4 +541,13 @@ ul.side__navbar a li ion-icon
     background: var(--secondary);
     box-shadow: 0px 0px 50px var(--secondary);
     cursor: pointer;
+}
+
+/* make hero section responsive */
+
+@media screen and (max-width:700px){
+    .hero__txt
+    {
+        font-size: .6em;
+    }
 }
