@@ -19,5 +19,8 @@ let menuIcon=document.getElementById('menu__icon');
 
 menuIcon.addEventListener("click",()=>{
     Navabar.classList.toggle("sidebar__toggle");
-    menuIcon.getAttribute("name")==="menu-outline"? menuIcon.setAttribute("name","close-outline") : menuIcon.setAttribute("name","menu-outline");
+    setTimeout(()=>{
+        menuIcon.getAttribute("src")==="./images/nav-icon.png"? menuIcon.setAttribute("src","./images/close.png") : menuIcon.setAttribute("src","./images/nav-icon.png");
+    },200)
 })
+
