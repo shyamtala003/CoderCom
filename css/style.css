@@ -7,7 +7,7 @@
     --white: #ffffff;
     --dark: #000000;
     --dark-gray: #515050ae;
-    --light-gray: #6b6b6b;
+    --light-gray: #87878f;
 
     --bg:#e7eaf2;
     --blur:80px;
@@ -41,9 +41,9 @@
     width: 0;
 }
 
+
+
 /* main container */
-
-
 .container
 {
     position: fixed;
@@ -296,7 +296,8 @@ ul.side__navbar a li ion-icon
 
 
 /* make sidebar responsive */
-@media screen and (max-width:880px){
+
+@media screen and (max-width:800px){
     .logo__txt
     {
         display: none;
@@ -338,18 +339,13 @@ ul.side__navbar a li ion-icon
 }
 
 
-/* hero section */
-.content
-{
-    padding-top: 3%;
-    padding-inline:3%;
-    z-index: -2;
-}
-
+/* hero section  */
 
 .hero__section
 {
     position: relative;
+    padding-top: 3%;
+    padding-inline:3%;
 }
 
 .hero__section::after
@@ -403,4 +399,10 @@ ul.side__navbar a li ion-icon
     font-size: 1em;
     font-weight: 500;
     line-height: 1.6em;
+}
+
+.hero__txt  a
+{
+    margin-top: 120px;
+    font-family: var(--roboto);
 }
