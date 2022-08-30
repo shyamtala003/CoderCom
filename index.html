@@ -19,6 +19,18 @@
 <body>
 
 
+    <!-- modal for login -->
+    <div id="modal-login" class="modal-login">
+        <img src="./images/close.png" alt="" id="modal__close">
+        <img src="./images/logo.png" width="60px" alt="" class="logo" >
+        <p id="modal-title">login</p>
+        <a href="#"><ion-icon name="call-outline"></ion-icon> Continue with Mobile</a>
+        <a href="#"><ion-icon name="mail-outline"></ion-icon> Continue with Email</a>
+        <a href="#"><img src="./images/google-logo.svg" alt=""> Start with Google</a>
+        <a href="#"><img src="./images/facebook-logo.svg" alt=""> Start with Facebook</a>
+        <button id="modal-btn"><span id="modal-btn-text">Already have an account? </span><span id="text-toggle">Login</span></button>
+    </div>
+
     <!-- container -->
     <div class="container">
 
@@ -34,7 +46,7 @@
             </div>
 
             <div class="right-content">
-                <a href="#" class="btn-login">Login</a>
+                <a href="#" class="btn-login" id="login-btn">Login</a>
             </div>
         </header>
 
@@ -196,12 +208,12 @@
                     <img src="./images/hero_image.png" class="hero__img" alt="">
 
                     <div class="hero__txt">
-                        <p class="title">Coder Community</p>
+                        <p class="title">  <span>Learn From Anywhere Community </span><span>Get Help Here</span></p>
                         <p class="desc">Welcome to coder community. You might be learning from any place, company or
                             resource, we are here to help you. Post any of your doubt and there are other fellow coders
                             along with our team to solve your doubts.
                         </p>
-                        <a href="#">join now</a>
+                        <center><button class="btn-register" id="join-btn">join now</button></center>
                     </div>
 
                 </section>

@@ -16,6 +16,8 @@
 
     --border:#aeaeb58c;
 
+    --modal-btn-bg:rgba(255, 255, 255, 0.491);
+
     --inter:'Inter', sans-serif;
     --roboto:'Roboto', sans-serif;
 
@@ -41,7 +43,109 @@
     width: 0;
 }
 
+body
+{
+    position: relative;
+    width: 100%;
+    height: 100vh;
+}
 
+
+/* modal */
+.modal-login
+{
+    position: absolute;
+    top: -50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    padding: 4%;
+    z-index: 12;
+    display: flex;
+    flex-direction: column;
+    /* align-items: center; */
+    gap: 20px;
+    font-family: var(--inter);
+    color: var(--white);
+    background: transparent;
+    backdrop-filter: blur(45px);
+    border: 5px solid var(--modal-btn-bg);
+    border-radius: 20px;
+    transition: all .5s ease-in-out;
+}
+
+.modal-active
+{
+    top: 50%;
+}
+
+#modal__close
+{
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    width: 40px;
+    background: var(--white);
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+#modal-login .logo
+{
+    margin: 0 auto;
+}
+
+#modal-login p
+{
+    font-size: 1.4rem;
+    margin: 0 auto;
+    color: var(--primary);
+    font-weight: 500;
+    text-transform: capitalize;
+}
+
+#modal-login a
+{
+    padding: .7em 2em;
+    border-radius: 10px;
+    background: var(--modal-btn-bg);
+    backdrop-filter: blur(100px);
+    display: flex;
+    justify-content: start;
+    align-items: center;
+}
+
+#modal-login a:hover
+{
+    background: var(--secondary);
+    color: var(--white);
+}
+
+#modal-login ion-icon
+{
+    margin-right: 10px;
+    font-size: 20px;
+}
+
+#modal-login a img
+{
+    margin-right: 10px;
+    width: 20px;
+}
+
+
+#modal-login button
+{
+    background: transparent;
+    font-size: .9em;
+    font-weight: 500;
+}
+
+#modal-login button span:last-child
+{
+    color: var(--primary);
+    font-weight: 600;
+    cursor: pointer;
+}
 
 /* main container */
 .container
@@ -380,6 +484,7 @@ ul.side__navbar a li ion-icon
 
 .hero__txt
 {
+    width: 100%;
     background: var(--bg);
     padding: 2em 2.5em 1em 2.5em;
     border-radius: 5px;
@@ -387,22 +492,52 @@ ul.side__navbar a li ion-icon
 
 .hero__txt p.title
 {
+    text-align: center;
     font-family: var(--roboto);
-    font-size: 1.5em;
+    font-size: 3em;
     font-weight: 600;
+}
+
+.hero__txt p.title span:first-child
+{
+    color: var(--primary);
+}
+
+.hero__txt p.title span:last-child
+{
+    color: var(--secondary);
 }
 
 .hero__txt p.desc
 {
     margin-top: 1em;
+    max-width: 800px;
+    margin: 1em auto 0;
     font-family: var(--inter);
-    font-size: 1em;
+    color: var(--light-gray);
+    text-align: center;
+    font-size: 1.2em;
     font-weight: 500;
     line-height: 1.6em;
 }
 
-.hero__txt  a
+.btn-register  
 {
-    margin-top: 120px;
-    font-family: var(--roboto);
+    margin: 30px;
+    padding: 1em 3.2em;
+    background: var(--primary);
+    color: var(--white);
+    font-family: var(--inter);
+    font-size: 1.2em;
+    font-weight: 500;
+    text-transform: capitalize;
+    border-radius: 18px;
+    box-shadow: 0px 0px 50px var(--primary);
+}
+
+.btn-register:hover
+{
+    background: var(--secondary);
+    box-shadow: 0px 0px 50px var(--secondary);
+    cursor: pointer;
 }
