@@ -273,6 +273,12 @@ header
 
 }
 
+.btn-login:hover
+{
+    background:var(--secondary);
+    box-shadow: 0px 5px 60px var(--secondary);
+}
+
 main
 {
     width: 100vw;
@@ -595,15 +601,21 @@ ul.side__navbar a li ion-icon
 
 .community__desc p.title
 {
-
+    
     display: flex;
     flex-direction: column;
     align-items: flex-start;
     justify-content: center;
+    background: url('../images/bg.png') no-repeat;
+    background-size: contain;
+    background-position: center center;
     font-family: var(--roboto);
     font-size: 3em;
     font-weight: 600;
     grid-column: 1/6;
+    width: 100%;
+    height: 50%;
+    
 }
 
 .card__container
@@ -649,22 +661,22 @@ ul.side__navbar a li ion-icon
     overflow: hidden;
 }
 
-.card__container .card:hover
+.card__container .card:hover ,.card:first-child 
 {
     background: var(--light-gray);
 }
 
-.card__container .card:hover .card__icon
+.card__container .card:hover .card__icon ,.card:first-child .card__icon
 {
     background: var(--white);
 }
 
-.card__container .card:hover  p.card__title 
+.card__container .card:hover  p.card__title ,.card:first-child p.card__title
 {
     color: var(--white);
 }
 
-.card__container .card:hover  .card__desc
+.card__container .card:hover  .card__desc , .card:first-child .card__desc
 {
     color: var(--white);
 }
@@ -772,5 +784,198 @@ ul.side__navbar a li ion-icon
         grid-template-columns: 1fr;
         padding-inline: 3%;
         gap: 2em;
+    }
+}
+
+
+/* owner detsils section */
+.owner__details
+{
+    margin-top: 3em;
+    padding-inline:3%;
+    display: grid;
+    grid-template-columns: repeat(12,1fr);
+}
+
+.owner__details .card
+{
+    position: relative;
+    grid-column: 1/6;
+    background: url("../images/hitesh_sir_2.png") no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+.owner__details .owner__info
+{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    position: relative;
+    grid-column: 6/13;
+    background: transparent;
+    background: rgba(255, 255, 255, .1);
+    /* backdrop-filter: blur(30px); */
+    overflow: hidden;
+}
+
+.owner__details .owner__info::after
+{
+    content: '';
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    width: 50%;
+    height: 50%;
+    background:var(--primary);
+    filter: blur(120px);
+    z-index: -1;
+}
+
+.owner__details .owner__info::before
+{
+    content: '';
+    position: absolute;
+    width: 50%;
+    height: 50%;
+    background:var(--secondary);
+    filter: blur(100px);
+    z-index: -1;
+}
+
+
+.card .card__img
+{
+    width: 100%; 
+}
+
+.card .designation
+{
+    position: absolute;
+    top: 5%;
+    right: 5%;
+    padding:10px 20px;
+    border-radius: 20px;
+    color: var(--white);
+    font-family: var(--roboto);
+    background: rgba(0, 0, 0, .4);
+    backdrop-filter: blur(40px);
+}
+
+.icons
+{
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    padding: .6em;
+    background: rgba(0, 0, 0, .4);
+    backdrop-filter: blur(40px);
+    text-align: center;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+}
+
+
+.icons .icon:not(.icon:first-child)
+{
+    margin-left: 2em;
+}
+
+.icons .icon img
+{
+    width: 30px;
+    background: rgba(255, 255, 255, .1);
+    border-radius: 30% 70% 67% 33% / 30% 30% 70% 70% ;
+    animation: blob 2s linear infinite;
+}
+
+@keyframes blob {
+    
+    100%,0%
+    {
+        border-radius: 30% 70% 67% 33% / 30% 30% 70% 70% ;
+    }25%
+    {
+        border-radius: 62% 38% 83% 17% / 66% 59% 41% 34%  ;
+    }50%
+    {
+        border-radius: 27% 73% 47% 53% / 49% 77% 23% 51%  ;
+    }
+    75%
+    {
+        border-radius: 27% 73% 47% 53% / 49% 77% 23% 51%  ;
+    }
+
+}
+
+.owner__details .owner__info
+{
+    padding: 3em 2em;
+}
+
+.owner__info p.name
+{
+    font-size: 3em;
+    font-weight: 500;
+    /* color: rgba(0, 0, 0, .5); */
+    color: var(--primary);
+    font-family: var(--roboto);
+}
+.owner__info img
+{
+    margin-top: 6px;
+    max-width: 120px;
+    max-height: 35px;
+    background: rgba(255, 255, 255, .7);
+    padding:5px;
+}
+
+.owner__info p.info
+{
+    max-width: 600px;
+    margin-top: .5em;
+    font-size: 1.3em;
+    font-weight: 500;
+    font-family: var(--inter);
+    /* color: var(--secondary); */
+    /* color: rgba(0, 0, 0, .5); */
+}
+
+.owner__info p.tags
+{
+    max-width: 400px;
+    margin-top: .5em;
+    font-size: 1.1em;
+    font-weight: 500;
+    font-family: var(--inter);
+}
+
+.owner__info p.tags span
+{
+    font-family: var(--roboto);
+    color: var(--primary);
+    font-weight: 700;
+}
+
+
+/* make owner section responsive */
+
+@media screen and (max-width:1350px){
+    .owner__details .card
+    {
+        grid-column: 1/13;
+        min-height: 300px;
+    }
+    
+    .owner__details .owner__info
+    {
+        grid-column: 1/13;
+    }
+
+    @media screen and (max-width:700px){
+        .owner__info p.name
+        {
+            font-size: 1.8em;
+        }
     }
 }
