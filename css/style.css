@@ -49,6 +49,7 @@ body {
 }
 
 
+
 /* modal */
 .modal-login {
     position: absolute;
@@ -167,7 +168,7 @@ body {
     backdrop-filter: blur(30px);
     overflow: hidden;
     z-index: 1;
-    
+
 }
 
 
@@ -717,7 +718,7 @@ ul.side__navbar a li ion-icon {
 
 /* owner detsils section */
 .owner__details {
-    margin-top: 3em;
+    margin-top: 7%;
     padding-inline: 3%;
     display: grid;
     grid-template-columns: repeat(12, 1fr);
@@ -894,14 +895,13 @@ ul.side__navbar a li ion-icon {
 
 /* Group List style */
 
-.group__list 
-{
-    margin-top: 2em;
+.group__list {
+    margin-top: 7%;
     padding-inline: 3%;
 }
 
-.group__list p.title
-{
+.group__list p.title {
+    text-align: center;
     gap: 2em;
     margin-block: 1em;
     font-family: var(--roboto);
@@ -910,15 +910,13 @@ ul.side__navbar a li ion-icon {
     color: var(--primary);
 }
 
-.group__list p.title span
-{
+.group__list p.title span {
     color: var(--secondary);
 }
 
-p.title span.badge
-{
-    background: #4b56e4;
-    color: var(--white);
+p.title span.badge {
+    background: rgba(255, 255, 255, .5);
+    color: var(--primary);
     font-size: .4em;
     padding: .5em .8em;
     border-radius: 10px;
@@ -929,7 +927,7 @@ p.title span.badge
 .swiper {
     width: 100%;
     height: 100%;
-  }
+}
 
 .swiper-slide {
     text-align: center;
@@ -950,9 +948,8 @@ p.title span.badge
     align-items: center;
 }
 
-.swiper-slide .card
-{
-    
+.swiper-slide .card {
+
     background: rgba(255, 255, 255, .5);
     border-radius: 5px;
     max-width: 225px;
@@ -970,58 +967,52 @@ p.title span.badge
 
 /* swipper js default style ended */
 
-.swiper-slide .card .card__image img
-{
+.swiper-slide .card .card__image img {
     width: 100%;
     border-radius: 5px;
     object-fit: cover;
 }
 
-.swiper-slide .card .card__content
-{
+.swiper-slide .card .card__content {
     padding: .8em .5em .2em .5em;
 }
 
-.swiper-slide .card__content p.title
-{
+.swiper-slide .card__content p.title {
     margin-top: .1em;
-    font-family:var(--roboto);
+    font-family: var(--roboto);
     color: var(--primary);
     font-size: .8em;
     text-align: left;
 }
 
-.swiper-slide .card__content p.desc
-{
+.swiper-slide .card__content p.desc {
     margin-top: .1em;
     text-align: left;
-    font-family:var(--inter);
+    font-family: var(--inter);
     color: var(--dark-gray);
     font-weight: 500;
     font-size: .7em;
 }
 
-.swiper-button-next, .swiper-button-prev
-{
+.swiper-button-next,
+.swiper-button-prev {
     color: var(--primary);
     padding: 20px;
     border-radius: 50%;
     overflow: hidden;
-    background:rgba(255, 255, 255, .5) ;
+    background: rgba(255, 255, 255, .5);
     backdrop-filter: blur(50px);
 }
 
 
 
-.card__content .card__bottom
-{
+.card__content .card__bottom {
     margin-top: 1em;
     display: flex;
     justify-content: space-between;
 }
 
-.card__content p
-{
+.card__content p {
     display: flex;
     align-items: center;
     gap: 7px;
@@ -1030,13 +1021,11 @@ p.title span.badge
 
 }
 
-.card__content p .people__icon
-{
+.card__content p .people__icon {
     color: var(--primary);
 }
 
-.card__bottom .card__btn
-{
+.card__bottom .card__btn {
     padding: .3em .6em;
     color: var(--primary);
     font-size: .7em;
@@ -1045,15 +1034,157 @@ p.title span.badge
     border-radius: 5px;
 }
 
-.card__bottom .card__btn:hover
-{
+.card__bottom .card__btn:hover {
     color: var(--white);
     background: var(--secondary);
     border-radius: 5px;
 }
 
-@media screen and (max-width:700px){
-    .group__list p.title{
+@media screen and (max-width:700px) {
+    .group__list p.title {
         font-size: 1.8em;
+    }
+}
+
+
+
+/* testimonial section */
+
+.testimonial {
+    margin-top: 7%;
+    background: rgba(255, 255, 255, .5);
+    padding: 2% 5%;
+    position: relative;
+}
+
+.testimonial p.title {
+    margin-top: .1em;
+    padding: 2em 0em;
+    font-family: var(--roboto);
+    color: var(--primary);
+    font-size: 2em;
+    font-weight: 600;
+    text-align: left;
+}
+
+.testimonial p.title span {
+    border-top: 7px solid var(--secondary);
+}
+
+@media screen and (max-width:700px) {
+    .group__list p.title {
+        font-size: 1.8em;
+    }
+}
+
+.testimonial__card {
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+}
+
+.testimonial__image {
+    grid-column: 1/6;
+    /* padding: 3em 2em; */
+}
+
+.testimonial__image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.testimonial__cotent {
+    padding: 3em;
+    grid-column: 6/13;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    flex-direction: column;
+    background: url('../images/bg.png') no-repeat;
+    background-size: 50%;
+    background-position: 168% -120%;
+}
+
+.testimonial__cotent img {
+    width: 30px;
+}
+
+.testimonial__cotent .testimonial__desc {
+    margin-top: 1em;
+    max-width: 450px;
+    text-align: justify;
+    font-size: 1em;
+    font-family: var(--inter);
+    font-weight: 600;
+    color: var(--dark-gray);
+}
+
+.testimonial__cotent p.name {
+    margin-top: 2em;
+    color: var(--primary);
+    font-family: var(--roboto);
+    font-weight: 500;
+    font-size: .9em;
+}
+
+.testimonial__cotent p.profession {
+    font-family: var(--inter);
+    font-weight: 500;
+    font-size: .8em;
+    color: var(--secondary);
+}
+
+.swiper-button-next {
+    position: absolute;
+    top: 80%;
+    right: 10%;
+}
+
+.swiper-button-prev {
+    position: absolute;
+    color: var(--secondary);
+    top: 80%;
+    left: 80%;
+}
+
+.swiper-button-next::after,
+.swiper-button-next::before {
+    font-weight: 700;
+}
+
+@media screen and (max-width:1180px) {
+    .testimonial__image {
+        grid-column: 1/13;
+    }
+
+    .testimonial__cotent {
+        grid-column: 1/13;
+    }
+
+}
+
+@media screen and (max-width:700px){
+    .testimonial__cotent .testimonial__desc
+    {
+        font-size: .8em;
+    }
+    .testimonial__cotent
+    {
+        padding: 5%;
+    }
+}
+
+@media screen and (max-width:1100px) {
+    .swiper-button-next {
+        position: absolute;
+        top:40%;
+        right: -0%;
+    }
+
+    .swiper-button-prev {
+        position: absolute;
+        color: var(--secondary);
+        top: 40%;
+        left: 0%;
     }
 }

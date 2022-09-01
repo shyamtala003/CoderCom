@@ -16,7 +16,7 @@ dropDownBtn.forEach((Element) => {
 
 let Navabar = document.getElementById('sidebar');
 let menuIcon = document.getElementById('menu__icon');
-let swiper1 = document.querySelector(".swiper");
+let swiper1 = document.querySelectorAll(".swiper");
 console.log(swiper1);
 
 menuIcon.addEventListener("click", () => {
@@ -25,10 +25,12 @@ menuIcon.addEventListener("click", () => {
         if(menuIcon.getAttribute("src") === "./images/nav-icon.png") 
         {
             menuIcon.setAttribute("src", "./images/close.png");
-            swiper1.style.zIndex="-1";
+            swiper1[0].style.zIndex="-1";
+            swiper1[1].style.zIndex="-1";
         }else{
             menuIcon.setAttribute("src", "./images/nav-icon.png");
-            swiper1.style.zIndex="1";  
+            swiper1[0].style.zIndex="1";  
+            swiper1[1].style.zIndex="1";  
         } 
         
     }, 200)
@@ -127,3 +129,26 @@ var swiper = new Swiper(".mySwiper", {
 });
 
 
+// swiper init code for testimonials section
+
+var swiper = new Swiper(".mySwiper2", {
+    slidesPerView: 4,
+    spaceBetween: 30,
+    slidesPerGroup: 3,
+    loopFillGroupWithBlank: true,
+    loop: false,
+    
+
+    navigation: {
+        nextEl: ".swiper-button-next",
+        prevEl: ".swiper-button-prev",
+    },
+    breakpoints: {
+        200: {
+            slidesPerView: 1,
+            spaceBetween: 10,
+            slidesPerGroup: 1,
+          },
+        
+    }
+});
