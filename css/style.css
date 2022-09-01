@@ -41,6 +41,7 @@
     width: 0;
 }
 
+
 body {
     position: relative;
     width: 100%;
@@ -166,6 +167,7 @@ body {
     backdrop-filter: blur(30px);
     overflow: hidden;
     z-index: 1;
+    
 }
 
 
@@ -272,6 +274,7 @@ main {
     height: 90vh;
     grid-column: 3/13;
     overflow: scroll;
+    scroll-behavior: smooth;
 }
 
 ul.side__navbar {
@@ -916,8 +919,8 @@ p.title span.badge
 {
     background: #4b56e4;
     color: var(--white);
-    font-size: .5em;
-    padding: .5em;
+    font-size: .4em;
+    padding: .5em .8em;
     border-radius: 10px;
 }
 

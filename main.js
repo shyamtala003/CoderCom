@@ -73,8 +73,9 @@ var swiper = new Swiper(".mySwiper", {
     slidesPerView: 4,
     spaceBetween: 30,
     slidesPerGroup: 3,
-    loop: false,
     loopFillGroupWithBlank: true,
+    loop: false,
+    
 
     navigation: {
         nextEl: ".swiper-button-next",
@@ -83,8 +84,8 @@ var swiper = new Swiper(".mySwiper", {
     breakpoints: {
         200: {
             slidesPerView: 1,
-            spaceBetween: 20,
-            slidesPerGroup: 1
+            spaceBetween: 10,
+            slidesPerGroup: 1,
           },
         500: {
             slidesPerView: 2,
