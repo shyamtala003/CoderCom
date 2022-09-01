@@ -16,11 +16,21 @@ dropDownBtn.forEach((Element) => {
 
 let Navabar = document.getElementById('sidebar');
 let menuIcon = document.getElementById('menu__icon');
+let swiper1 = document.querySelector(".swiper");
+console.log(swiper1);
 
 menuIcon.addEventListener("click", () => {
     Navabar.classList.toggle("sidebar__toggle");
     setTimeout(() => {
-        menuIcon.getAttribute("src") === "./images/nav-icon.png" ? menuIcon.setAttribute("src", "./images/close.png") : menuIcon.setAttribute("src", "./images/nav-icon.png");
+        if(menuIcon.getAttribute("src") === "./images/nav-icon.png") 
+        {
+            menuIcon.setAttribute("src", "./images/close.png");
+            swiper1.style.zIndex="-1";
+        }else{
+            menuIcon.setAttribute("src", "./images/nav-icon.png");
+            swiper1.style.zIndex="1";  
+        } 
+        
     }, 200)
 })
 
