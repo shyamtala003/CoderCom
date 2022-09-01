@@ -8,6 +8,9 @@
     <!-- favicon {<>} -->
     <link rel="shortcut icon" href="./images/favicon.ico" type="image/x-icon">
 
+    <!-- swiper.js style -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css" />
+
     <title>Document</title>
 
     <!-- general stylesheet -->
@@ -32,7 +35,7 @@
         </a>
         <a href="#"><img src="./images/google-logo.svg" alt=""> Start with Google</a>
         <a href="#"><img src="./images/facebook-logo.svg" alt=""> Start with Facebook</a>
-        <button id="modal-btn"><span id="modal-btn-text">Already have an account? </span><span
+        <button id="modal-btn "><span id="modal-btn-text">Already have an account? </span><span
                 id="text-toggle">Login</span></button>
     </div>
 
@@ -51,7 +54,7 @@
             </div>
 
             <div class="right-content">
-                <a href="#" class="btn-login" id="login-btn">Login</a>
+                <a href="#" class="btn-login card__btn" id="login-btn">Login</a>
             </div>
         </header>
 
@@ -179,8 +182,9 @@
                     </div>
 
                     <li class="dropdown-btn">
-                        <ion-icon name="lock-closed-outline"></ion-icon>
-                        <ion-icon name="caret-forward-outline"></ion-icon> <span>Campus Tech..</span>
+
+                        <ion-icon name="caret-forward-outline"></ion-icon>
+                        <ion-icon name="lock-closed"></ion-icon> <span>Campus Tech..</span>
                     </li>
                     <div class="dropdown-content">
                         <a href="#"># General</a>
@@ -188,8 +192,9 @@
                     </div>
 
                     <li class="dropdown-btn">
-                        <ion-icon name="lock-closed-outline"></ion-icon>
-                        <ion-icon name="caret-forward-outline"></ion-icon> <span>Javascript paid..</span>
+
+                        <ion-icon name="caret-forward-outline"></ion-icon>
+                        <ion-icon name="lock-closed"></ion-icon> <span>Javascript paid..</span>
                     </li>
                     <div class="dropdown-content">
                         <a href="#"># General</a>
@@ -218,7 +223,7 @@
                             resource, we are here to help you. Post any of your doubt and there are other fellow coders
                             along with our team to solve your doubts.
                         </p>
-                        <center><button class="btn-register" id="join-btn">join now</button></center>
+                        <center><button class="btn-register card__btn" id="join-btn">join now</button></center>
                     </div>
 
                 </section>
@@ -288,15 +293,345 @@
                             <span>Hitesh</span> Choidhary
                         </p>
                         <p class="info">
-                            Teacher and coder who is trying to solve some problems via <br/><a href="#"><img src="./images/ineuron-logo.png" alt=""></a> <a href="#"><img src="./images/learneast.png" alt=""></a> <a href="#"><img src="./images/pencil.png" alt=""></a>  <a href="#"><img src="./images/findcoder.png" alt=""></a>
-                        </p>  
+                            Teacher and coder who is trying to solve some problems via <br /><a href="#"><img
+                                    src="./images/ineuron-logo.png" alt=""></a> <a href="#"><img
+                                    src="./images/learneast.png" alt=""></a> <a href="#"><img src="./images/pencil.png"
+                                    alt=""></a> <a href="#"><img src="./images/findcoder.png" alt=""></a>
+                        </p>
                         <p class="tags">
-                            Talks about <span>#coding</span>, <span>#youtuber</span>, <span>#javascript</span>, <span>#technology</span>,and <span>#programming</span>
-                        </p> 
-                         
+                            Talks about <span>#coding</span>, <span>#youtuber</span>, <span>#javascript</span>,
+                            <span>#technology</span>,and <span>#programming</span>
+                        </p>
+
                     </div>
                 </section>
 
+
+                <!-- Group List section -->
+                <section class="group__list">
+                    <p class="title">
+                        Explre <span>Groups</span> <span class="badge">123</span>
+                    </p>
+                    <div class="swiper mySwiper">
+                        <div class="swiper-wrapper">
+                            
+                            <div class="swiper-slide">
+                                <div class="card">
+                                    <div class="card__image">
+                                        <img src="./images/cards/s1.jpg" alt="">
+                                    </div>
+                                    <div class="card__content">
+                                        <p class="title">
+                                            Javascript Community
+                                        </p>
+                                        <p class="desc">
+                                            Learn and help from each other. It doesn't matter from wh...
+                                        </p>
+                                        
+                                        <div class="card__bottom">
+                                            <p><ion-icon name="people" class="people__icon"></ion-icon> <span>1134</span></p>
+                                            <a href="#" class="card__btn">Login</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            
+                            <div class="swiper-slide">
+                                <div class="card">
+                                    <div class="card__image">
+                                        <img src="./images/cards/s2.png" alt="">
+                                    </div>
+                                    <div class="card__content">
+                                        <p class="title">
+                                            Python Community
+                                        </p>
+                                        <p class="desc">
+                                            Learn and help from each other. It doesn't matter from wh...
+                                        </p>
+                                        
+                                        <div class="card__bottom">
+                                            <p><ion-icon name="people" class="people__icon"></ion-icon> <span>1134</span></p>
+                                            <a href="#" class="card__btn">Login</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            
+                            <div class="swiper-slide">
+                                <div class="card">
+                                    <div class="card__image">
+                                        <img src="./images/cards/s3.png" alt="">
+                                    </div>
+                                    <div class="card__content">
+                                        <p class="title">
+                                            Java Community
+                                        </p>
+                                        <p class="desc">
+                                            Learn and help from each other. It doesn't matter from wh...
+                                        </p>
+                                        
+                                        <div class="card__bottom">
+                                            <p><ion-icon name="people" class="people__icon"></ion-icon> <span>1134</span></p>
+                                            <a href="#" class="card__btn">Login</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            
+                            <div class="swiper-slide">
+                                <div class="card">
+                                    <div class="card__image">
+                                        <img src="./images/cards/s4.png" alt="">
+                                    </div>
+                                    <div class="card__content">
+                                        <p class="title">
+                                            C/CPP Community
+                                        </p>
+                                        <p class="desc">
+                                            Learn and help from each other. It doesn't matter from wh...
+                                        </p>
+                                        
+                                        <div class="card__bottom">
+                                            <p><ion-icon name="people" class="people__icon"></ion-icon> <span>1134</span></p>
+                                            <a href="#" class="card__btn">Login</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            
+                            <div class="swiper-slide">
+                                <div class="card">
+                                    <div class="card__image">
+                                        <img src="./images/cards/s5.png" alt="">
+                                    </div>
+                                    <div class="card__content">
+                                        <p class="title">
+                                            System Design Community
+                                        </p>
+                                        <p class="desc">
+                                            Learn and help from each other. It doesn't matter from wh...
+                                        </p>
+                                        
+                                        <div class="card__bottom">
+                                            <p><ion-icon name="people" class="people__icon"></ion-icon> <span>1134</span></p>
+                                            <a href="#" class="card__btn">Login</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="swiper-slide">
+                                <div class="card">
+                                    <div class="card__image">
+                                        <img src="./images/cards/s6.png" alt="">
+                                    </div>
+                                    <div class="card__content">
+                                        <p class="title">
+                                            Mobile developer Community
+                                        </p>
+                                        <p class="desc">
+                                            Learn and help from each other. It doesn't matter from wh...
+                                        </p>
+                                        
+                                        <div class="card__bottom">
+                                            <p><ion-icon name="people" class="people__icon"></ion-icon> <span>1134</span></p>
+                                            <a href="#" class="card__btn">Login</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="swiper-slide">
+                                <div class="card">
+                                    <div class="card__image">
+                                        <img src="./images/cards/s7.png" alt="">
+                                    </div>
+                                    <div class="card__content">
+                                        <p class="title">
+                                            Front-End Community
+                                        </p>
+                                        <p class="desc">
+                                            Learn and help from each other. It doesn't matter from wh...
+                                        </p>
+                                        
+                                        <div class="card__bottom">
+                                            <p><ion-icon name="people" class="people__icon"></ion-icon> <span>1134</span></p>
+                                            <a href="#" class="card__btn">Login</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="swiper-slide">
+                                <div class="card">
+                                    <div class="card__image">
+                                        <img src="./images/cards/s8.png" alt="">
+                                    </div>
+                                    <div class="card__content">
+                                        <p class="title">
+                                            Data Structure & Algorithm
+                                        </p>
+                                        <p class="desc">
+                                            Learn and help from each other. It doesn't matter from wh...
+                                        </p>
+                                        
+                                        <div class="card__bottom">
+                                            <p><ion-icon name="people" class="people__icon"></ion-icon> <span>1134</span></p>
+                                            <a href="#" class="card__btn">Login</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="swiper-slide">
+                                <div class="card">
+                                    <div class="card__image">
+                                        <img src="./images/cards/s9.png" alt="">
+                                    </div>
+                                    <div class="card__content">
+                                        <p class="title">
+                                            Database Community
+                                        </p>
+                                        <p class="desc">
+                                            Learn and help from each other. It doesn't matter from wh...
+                                        </p>
+                                        
+                                        <div class="card__bottom">
+                                            <p><ion-icon name="people" class="people__icon"></ion-icon> <span>1134</span></p>
+                                            <a href="#" class="card__btn">Login</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="swiper-slide">
+                                <div class="card">
+                                    <div class="card__image">
+                                        <img src="./images/cards/s10.png" alt="">
+                                    </div>
+                                    <div class="card__content">
+                                        <p class="title">
+                                            DevOps Community
+                                        </p>
+                                        <p class="desc">
+                                            Learn and help from each other. It doesn't matter from wh...
+                                        </p>
+                                        
+                                        <div class="card__bottom">
+                                            <p><ion-icon name="people" class="people__icon"></ion-icon> <span>1134</span></p>
+                                            <a href="#" class="card__btn">Login</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="swiper-slide">
+                                <div class="card">
+                                    <div class="card__image">
+                                        <img src="./images/cards/s11.png" alt="">
+                                    </div>
+                                    <div class="card__content">
+                                        <p class="title">
+                                            Cloud Community
+                                        </p>
+                                        <p class="desc">
+                                            Learn and help from each other. It doesn't matter from wh...
+                                        </p>
+                                        
+                                        <div class="card__bottom">
+                                            <p><ion-icon name="people" class="people__icon"></ion-icon> <span>1134</span></p>
+                                            <a href="#" class="card__btn">Login</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="swiper-slide">
+                                <div class="card">
+                                    <div class="card__image">
+                                        <img src="./images/cards/s12.png" alt="">
+                                    </div>
+                                    <div class="card__content">
+                                        <p class="title">
+                                            Campus Tech leaders
+                                        </p>
+                                        <p class="desc">
+                                            Learn and help from each other. It doesn't matter from wh...
+                                        </p>
+                                        
+                                        <div class="card__bottom">
+                                            <p><ion-icon name="people" class="people__icon"></ion-icon> <span>1134</span></p>
+                                            <a href="#" class="card__btn">Login</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="swiper-slide">
+                                <div class="card">
+                                    <div class="card__image">
+                                        <img src="./images/cards/s13.png" alt="">
+                                    </div>
+                                    <div class="card__content">
+                                        <p class="title">
+                                            Software Testing Community
+                                        </p>
+                                        <p class="desc">
+                                            Learn and help from each other. It doesn't matter from wh...
+                                        </p>
+                                        
+                                        <div class="card__bottom">
+                                            <p><ion-icon name="people" class="people__icon"></ion-icon> <span>1134</span></p>
+                                            <a href="#" class="card__btn">Login</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="swiper-slide">
+                                <div class="card">
+                                    <div class="card__image">
+                                        <img src="./images/cards/s14.png" alt="">
+                                    </div>
+                                    <div class="card__content">
+                                        <p class="title">
+                                            Backend devs Community
+                                        </p>
+                                        <p class="desc">
+                                            Learn and help from each other. It doesn't matter from wh...
+                                        </p>
+                                        
+                                        <div class="card__bottom">
+                                            <p><ion-icon name="people" class="people__icon"></ion-icon> <span>1134</span></p>
+                                            <a href="#" class="card__btn">Login</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="swiper-slide">
+                                <div class="card">
+                                    <div class="card__image">
+                                        <img src="./images/cards/s15.png" alt="">
+                                    </div>
+                                    <div class="card__content">
+                                        <p class="title">
+                                            Javascript paid bootcamp | Pro
+                                        </p>
+                                        <p class="desc">
+                                            Learn and help from each other. It doesn't matter from wh...
+                                        </p>
+                                        
+                                        <div class="card__bottom">
+                                            <p><ion-icon name="people" class="people__icon"></ion-icon> <span>1134</span></p>
+                                            <a href="#" class="card__btn">Login</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                
+                        </div>
+                        <div class="swiper-button-next"></div>
+                        <div class="swiper-button-prev"></div>
+                    </div>
+
+                </section>
 
 
             </section>
@@ -309,13 +644,16 @@
 
 
 
+
     <!-- 📌ion icon script📌 -->
     <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
     <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
 
+    <!-- 📌swiper.js cdn📌 -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
 
     <!-- general script file -->
-    <script src="./main.js"></script>
+    <script type="" src="./main.js"></script>
 
 </body>
 
