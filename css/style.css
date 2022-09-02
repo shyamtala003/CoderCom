@@ -1186,20 +1186,6 @@ p.title span.badge {
 
 }
 
-.next_btn:hover
-{
-    animation: arrow__animate1 1s  ease-in-out infinite;
-}
-
-@keyframes arrow__animate1 {
-    100%,0%
-    {
-        right:10%;
-    }50%{
-        right:11%;
-    }
-}
-
 .prev_btn {
     position: absolute;
     top: 80%;
@@ -1215,20 +1201,6 @@ p.title span.badge {
     border-radius: 50%;
     z-index: 3;
 }
-.prev_btn:hover 
-{
-    animation: arrow__animate2 1s  ease-in-out infinite;
-}
-@keyframes arrow__animate2 {
-    100%,0%
-    {
-        left:75%;
-    }50%{
-        left:76%;
-    }
-}
-
-
 
 @media screen and (max-width:1180px) {
     .testimonial__image {
