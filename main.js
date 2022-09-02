@@ -132,7 +132,7 @@ var swiper = new Swiper(".mySwiper", {
 
 var swiper = new Swiper(".mySwiper2", {
     slidesPerView: 4,
-    spaceBetween: 30,
+    spaceBetween: 10,
     slidesPerGroup: 3,
     loopFillGroupWithBlank: true,
     loop: false,
@@ -157,7 +157,7 @@ var swiper = new Swiper(".mySwiper2", {
 
 let QAN = document.querySelectorAll(".q__and__a");
 QAN.forEach(Element=>{
-        
+
     // given line close the all collaps
     Element.addEventListener("click", ()=>{
         Element.classList.toggle("active");
@@ -167,4 +167,30 @@ QAN.forEach(Element=>{
         // given line change icon of q&a <section></section>
         Icon_arraow.getAttribute("name")=="chevron-down-outline" ? Icon_arraow.setAttribute("name","close") : Icon_arraow.setAttribute("name","chevron-down-outline");
     })
+})
+
+
+// script for theme changer
+
+let themeToggler= document.getElementById('theme__toggler');
+let themeTogglerBtn=document.getElementById('theme__toggler__btn');
+let descSection=document.querySelector(".community__desc p.title");
+let heroImsage=document.getElementById('hero__img');
+
+console.log(themeToggler.getAttribute("href"));
+themeTogglerBtn.addEventListener("click", ()=>{
+
+    if(themeToggler.getAttribute("href")=="./css/light.css")
+    {
+        themeToggler.setAttribute("href","./css/dark.css");
+        themeTogglerBtn.firstChild.setAttribute("name","sunny-outline");
+        descSection.style.background="none";
+        heroImsage.setAttribute("src","./images/hero_image_dark.png");
+    }else
+    {
+        themeToggler.setAttribute("href","./css/light.css");
+        themeTogglerBtn.firstChild.setAttribute("name","moon-outline");
+        descSection.style.background="url('../images/bg.png') no-repeat";
+        heroImsage.setAttribute("src","./images/hero_image.png");
+    }
 })

@@ -1,0 +1,32 @@
+:root {
+    --primary: #4b56e4;
+    --secondary: #25cca9;
+    --white: #ffffff;
+    --dark: #000000;
+    --dark-gray: #515050ae;
+    --light-gray: #87878f;
+    --back_circle_1:#ffd8d1;
+    --back_circle_2:#c5b9ff;
+
+    --bg: #e7eaf2;
+    --hero-bg:#e7eaf2;
+    --blur: 80px;
+
+    --bg-3:rgba(255, 255, 255, .1);
+    --bg-4:rgba(255, 255, 255, .2);
+    --bg-5:rgba(255, 255, 255, .5);
+    --bg-7:rgba(255, 255, 255, .7);
+
+    --modal-close-bg:#ffffff;
+    --nav-icon-bg:#ffffff;
+
+    --padding-x: 5%;
+
+    --border: #aeaeb58c;
+
+    --modal-btn-bg: rgba(255, 255, 255, 0.491);
+
+    --inter: 'Inter', sans-serif;
+    --roboto: 'Roboto', sans-serif;
+
+}
