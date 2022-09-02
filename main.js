@@ -17,7 +17,7 @@ dropDownBtn.forEach((Element) => {
 let Navabar = document.getElementById('sidebar');
 let menuIcon = document.getElementById('menu__icon');
 let swiper1 = document.querySelectorAll(".swiper");
-console.log(swiper1);
+
 
 menuIcon.addEventListener("click", () => {
     Navabar.classList.toggle("sidebar__toggle");
@@ -72,7 +72,6 @@ modalBtn.addEventListener("click", () => {
         modalTitle.innerText = "Login";
     }
 })
-console.log(modalBtn2.innerText);
 
 
 
@@ -90,8 +89,8 @@ var swiper = new Swiper(".mySwiper", {
     
 
     navigation: {
-        nextEl: ".swiper-button-next",
-        prevEl: ".swiper-button-prev",
+        nextEl: ".next_btn_card",
+        prevEl: ".prev_btn_card",
     },
     breakpoints: {
         200: {
@@ -140,8 +139,8 @@ var swiper = new Swiper(".mySwiper2", {
     
 
     navigation: {
-        nextEl: ".swiper-button-next",
-        prevEl: ".swiper-button-prev",
+        nextEl: ".next_btn",
+        prevEl: ".prev_btn",
     },
     breakpoints: {
         200: {
@@ -152,3 +151,20 @@ var swiper = new Swiper(".mySwiper2", {
         
     }
 });
+
+
+// script of Q&A section
+
+let QAN = document.querySelectorAll(".q__and__a");
+QAN.forEach(Element=>{
+    Element.addEventListener("click", ()=>{
+        Element.classList.toggle("active");
+        let Icon_arraow=Element.querySelector(".down");
+
+
+        setTimeout(()=>{
+            // given line change icon of q&a <section></section>
+            Icon_arraow.getAttribute("name")=="chevron-down-outline" ? Icon_arraow.setAttribute("name","close") : Icon_arraow.setAttribute("name","chevron-down-outline");
+        },600)
+    })
+})

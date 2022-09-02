@@ -419,6 +419,7 @@ ul.side__navbar a li ion-icon {
         position: absolute;
         left: -250%;
         background: rgba(255, 255, 255, .7);
+       
         backdrop-filter: blur(10px);
         transition: all .5s ease-in-out;
         z-index: 1;
@@ -428,6 +429,13 @@ ul.side__navbar a li ion-icon {
         left: 0%;
     }
 
+}
+
+@media screen and (max-width:400px) {
+    .sidebar
+    {
+        width: 100vw;
+    }
 }
 
 
@@ -927,6 +935,7 @@ p.title span.badge {
 .swiper {
     width: 100%;
     height: 100%;
+    position: relative;
 }
 
 .swiper-slide {
@@ -994,17 +1003,6 @@ p.title span.badge {
     font-size: .7em;
 }
 
-.swiper-button-next,
-.swiper-button-prev {
-    color: var(--primary);
-    padding: 20px;
-    border-radius: 50%;
-    overflow: hidden;
-    background: rgba(255, 255, 255, .5);
-    backdrop-filter: blur(50px);
-}
-
-
 
 .card__content .card__bottom {
     margin-top: 1em;
@@ -1040,6 +1038,40 @@ p.title span.badge {
     border-radius: 5px;
 }
 
+.next_btn_card
+{
+    position: absolute;
+    top: 50%;
+    right: 2%;
+    transform: translate(-50%,-5%);
+    background: var(--primary);
+    color: var(--white);
+    padding: 10px;
+    font-size: 2em;
+    display: grid;
+    place-items: center;
+    cursor: pointer;
+    border-radius: 50%;
+    z-index: 1;
+}
+
+.prev_btn_card
+{  
+    position: absolute;
+    top: 50%;
+    left: 10%;
+    transform: translate(-50%,-5%);
+    padding: 10px;
+    background: var(--secondary);
+    font-size: 2em;
+    color: var(--white);
+    display: grid;
+    place-items: center;
+    cursor: pointer;
+    border-radius: 50%;
+    z-index: 5;
+}
+
 @media screen and (max-width:700px) {
     .group__list p.title {
         font-size: 1.8em;
@@ -1053,7 +1085,7 @@ p.title span.badge {
 .testimonial {
     margin-top: 7%;
     background: rgba(255, 255, 255, .5);
-    padding: 2% 5%;
+    padding: 3% 5%;
     position: relative;
 }
 
@@ -1134,23 +1166,39 @@ p.title span.badge {
     color: var(--secondary);
 }
 
-.swiper-button-next {
+.next_btn {
     position: absolute;
     top: 80%;
     right: 10%;
+    background: var(--primary);
+    opacity: .8;
+    color: var(--white);
+    padding: 10px;
+    font-size: 2em;
+    display: grid;
+    place-items: center;
+    cursor: pointer;
+    border-radius: 50%;
+    z-index: 1;
 }
 
-.swiper-button-prev {
+.prev_btn {
     position: absolute;
-    color: var(--secondary);
     top: 80%;
     left: 80%;
+    padding: 10px;
+    background:var(--secondary);
+    opacity: .8;
+    font-size: 2em;
+    color: var(--white);
+    display: grid;
+    place-items: center;
+    cursor: pointer;
+    border-radius: 50%;
+    z-index: 3;
 }
 
-.swiper-button-next::after,
-.swiper-button-next::before {
-    font-weight: 700;
-}
+
 
 @media screen and (max-width:1180px) {
     .testimonial__image {
@@ -1175,16 +1223,127 @@ p.title span.badge {
 }
 
 @media screen and (max-width:1100px) {
-    .swiper-button-next {
+    .next_btn {
         position: absolute;
         top:40%;
-        right: -0%;
+        right: 5%;
+        background: rgba(0, 0, 0, .2);
+        backdrop-filter: blur(30px);
+        color: var(--primary);
     }
 
-    .swiper-button-prev {
+    .prev_btn {
         position: absolute;
-        color: var(--secondary);
         top: 40%;
-        left: 0%;
+        left: 5%;
+        background: rgba(0, 0, 0, .4);
+        backdrop-filter: blur(30px);
+        color: var(--secondary);
+    }
+}
+
+/* FAQ section */
+
+.FAQ
+{
+    margin-top: 7%;
+    padding-inline:5%;
+    display: grid;
+    grid-template-columns: repeat(12,1fr);
+}
+
+.faq__image
+{
+    grid-column: 1/7;
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    justify-content: start;
+}
+
+.faq__image img
+{
+    width: 100%;
+    object-fit: contain;
+}
+
+.faq__content
+{
+    grid-column: 7/13;
+}
+
+.faq__content .title
+{
+    font-family: var(--roboto);
+    font-size: 2em;
+    font-weight: 600;
+    color: var(--primary);
+    margin-bottom: 1em;
+}
+
+.q__and__a
+{
+    border-bottom: 3px solid var(--border);
+}
+
+.q__and__a .question
+{
+    margin-top: 2em;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    font-family: var(--roboto);
+    font-size: 1.1em;
+    font-weight: 600;
+    cursor: pointer;
+}
+
+.q__and__a .answer
+{
+    margin: .7em 0 1em 0;
+    font-family: var(--inter);
+    font-weight: 500;
+    font-size: .9em;
+}
+
+.q__and__a .answer
+{
+    max-height: 0px;
+    overflow: hidden;
+    transition: max-height 1.2s ease;
+}
+
+.q__and__a.active .answer
+{
+    max-height: 300px;
+}
+
+@media screen and (max-width:1280px){
+    .faq__image
+    {
+        grid-column: 1/13;
+        display: grid;
+        place-items: center;
+    }
+    .faq__image img
+    {
+        width: 50%;
+    }
+
+    .faq__content
+    {
+        grid-column: 1/13;
+    }
+}
+
+@media screen and (max-width:700px){
+    .FAQ .faq__content .title
+    {
+        font-size: 1.8em;
+    }
+    .faq__image img
+    {
+        width: 70%;
     }
 }
