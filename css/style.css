@@ -909,7 +909,6 @@ ul.side__navbar a li ion-icon {
 }
 
 .group__list p.title {
-    text-align: center;
     gap: 2em;
     margin-block: 1em;
     font-family: var(--roboto);
@@ -936,6 +935,7 @@ p.title span.badge {
     width: 100%;
     height: 100%;
     position: relative;
+    overflow: visible;
 }
 
 .swiper-slide {
@@ -957,6 +957,8 @@ p.title span.badge {
     align-items: center;
 }
 
+
+
 .swiper-slide .card {
 
     background: rgba(255, 255, 255, .5);
@@ -967,7 +969,7 @@ p.title span.badge {
 }
 
 .swiper-container {
-    overflow: hidden;
+    /* overflow: hidden; */
     width: 100%;
     height: 300px;
     margin: 20px auto;
@@ -992,6 +994,7 @@ p.title span.badge {
     color: var(--primary);
     font-size: .8em;
     text-align: left;
+    min-height: 38px;
 }
 
 .swiper-slide .card__content p.desc {
@@ -1042,8 +1045,8 @@ p.title span.badge {
 {
     position: absolute;
     top: 50%;
-    right: 2%;
-    transform: translate(-50%,-5%);
+    right: 0%;
+    transform: translate(-50%,-0%);
     background: var(--primary);
     color: var(--white);
     padding: 10px;
@@ -1059,7 +1062,7 @@ p.title span.badge {
 {  
     position: absolute;
     top: 50%;
-    left: 10%;
+    left: 4%;
     transform: translate(-50%,-5%);
     padding: 10px;
     background: var(--secondary);
@@ -1069,7 +1072,7 @@ p.title span.badge {
     place-items: center;
     cursor: pointer;
     border-radius: 50%;
-    z-index: 5;
+    z-index: 1;
 }
 
 @media screen and (max-width:700px) {
@@ -1180,12 +1183,27 @@ p.title span.badge {
     cursor: pointer;
     border-radius: 50%;
     z-index: 1;
+
+}
+
+.next_btn:hover
+{
+    animation: arrow__animate1 1s  ease-in-out infinite;
+}
+
+@keyframes arrow__animate1 {
+    100%,0%
+    {
+        right:10%;
+    }50%{
+        right:11%;
+    }
 }
 
 .prev_btn {
     position: absolute;
     top: 80%;
-    left: 80%;
+    left: 75%;
     padding: 10px;
     background:var(--secondary);
     opacity: .8;
@@ -1196,6 +1214,18 @@ p.title span.badge {
     cursor: pointer;
     border-radius: 50%;
     z-index: 3;
+}
+.prev_btn:hover 
+{
+    animation: arrow__animate2 1s  ease-in-out infinite;
+}
+@keyframes arrow__animate2 {
+    100%,0%
+    {
+        left:75%;
+    }50%{
+        left:76%;
+    }
 }
 
 
@@ -1312,6 +1342,7 @@ p.title span.badge {
     max-height: 0px;
     overflow: hidden;
     transition: max-height 1.2s ease;
+    text-align: justify;
 }
 
 .q__and__a.active .answer
@@ -1338,6 +1369,9 @@ p.title span.badge {
 }
 
 @media screen and (max-width:700px){
+   
+    
+    
     .FAQ .faq__content .title
     {
         font-size: 1.8em;
@@ -1345,5 +1379,49 @@ p.title span.badge {
     .faq__image img
     {
         width: 70%;
+        margin-bottom: 2em;
     }
+}
+
+/* footer */
+
+footer
+{
+    margin-top: 7%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background: rgba(255, 255, 255, .2);
+    border-top: 2px solid var(--border);
+    padding: 2em;
+}
+
+footer .footer__logo
+{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: var(--inter);
+    font-size: 1em;
+    font-weight: 600;
+    color: var(--primary);
+}
+
+.footer__logo img
+{
+    width: 25px;
+    margin-right: 5px;
+}
+
+.footer__links
+{
+    margin-top: 1em;
+}
+
+.footer__links a
+{
+    color: var(--dark);
+    font-size: 1em;
+    font-family: var(--roboto);
 }

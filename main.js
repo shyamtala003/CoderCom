@@ -157,14 +157,14 @@ var swiper = new Swiper(".mySwiper2", {
 
 let QAN = document.querySelectorAll(".q__and__a");
 QAN.forEach(Element=>{
+        
+    // given line close the all collaps
     Element.addEventListener("click", ()=>{
         Element.classList.toggle("active");
         let Icon_arraow=Element.querySelector(".down");
 
 
-        setTimeout(()=>{
-            // given line change icon of q&a <section></section>
-            Icon_arraow.getAttribute("name")=="chevron-down-outline" ? Icon_arraow.setAttribute("name","close") : Icon_arraow.setAttribute("name","chevron-down-outline");
-        },600)
+        // given line change icon of q&a <section></section>
+        Icon_arraow.getAttribute("name")=="chevron-down-outline" ? Icon_arraow.setAttribute("name","close") : Icon_arraow.setAttribute("name","chevron-down-outline");
     })
 })
