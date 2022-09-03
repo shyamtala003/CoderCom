@@ -31,7 +31,6 @@ let cardWrapper=document.querySelectorAll(".swiper-wrapper");
 cardWrapper=cardWrapper[1];
 
 card.forEach((Element) => {
-    console.log(Element);
     cardWrapper.innerHTML+=
     `   
     <div class="swiper-slide">

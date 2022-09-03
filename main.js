@@ -135,7 +135,7 @@ var swiper = new Swiper(".mySwiper2", {
     spaceBetween: 10,
     slidesPerGroup: 3,
     loopFillGroupWithBlank: true,
-    loop: false,
+    loop: true,
     
 
     navigation: {
@@ -178,7 +178,7 @@ let descSection=document.querySelector(".community__desc p.title");
 let heroImsage=document.getElementById('hero__img');
 let logo = document.getElementById('header_logo');
 
-console.log(themeToggler.getAttribute("href"));
+
 themeTogglerBtn.addEventListener("click", ()=>{
 
     if(themeToggler.getAttribute("href")=="./css/light.css")

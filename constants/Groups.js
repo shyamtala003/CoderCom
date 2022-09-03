@@ -97,7 +97,6 @@ let groupWrapper=document.querySelectorAll(".swiper-wrapper");
 groupWrapper=groupWrapper[0];
 
 group.forEach((Element) => {
-    console.log(Element);
     groupWrapper.innerHTML+=
     `   
     <div class="swiper-slide">
@@ -122,3 +121,7 @@ group.forEach((Element) => {
     </div>`;
 })
 
+
+// code for displaying number of group in community
+let badge=document.querySelector(".badge");
+badge.innerHTML=group.length;
