@@ -176,6 +176,7 @@ let themeToggler= document.getElementById('theme__toggler');
 let themeTogglerBtn=document.getElementById('theme__toggler__btn');
 let descSection=document.querySelector(".community__desc p.title");
 let heroImsage=document.getElementById('hero__img');
+let logo = document.getElementById('header_logo');
 
 console.log(themeToggler.getAttribute("href"));
 themeTogglerBtn.addEventListener("click", ()=>{
@@ -194,3 +195,16 @@ themeTogglerBtn.addEventListener("click", ()=>{
         heroImsage.setAttribute("src","./images/hero_image.png");
     }
 })
+
+
+// coder for page title
+setInterval(()=>{
+    if(document.title=="Coder Community")
+    {
+        document.title="1 New Message";
+    }
+    else
+    {
+        document.title="Coder Community"; 
+    }
+},1000)

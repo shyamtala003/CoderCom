@@ -5,8 +5,16 @@
     --dark: #000000;
     --dark-gray: #515050ae;
     --light-gray: #87878f;
+    --hover-light-gray:#87878f;
     --back_circle_1:#ffd8d1;
     --back_circle_2:#c5b9ff;
+
+    --primary-btn:#4b56e4;
+    --secondary-btn:#25cca9;
+
+    --primary-logo-text:#4b56e4;
+    --secondary-logo-text:#25cca9;
+
 
     --bg: #e7eaf2;
     --hero-bg:#e7eaf2;

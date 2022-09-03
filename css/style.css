@@ -209,11 +209,11 @@ header {
     font-family: var(--roboto);
     font-size: 1.4em;
     font-weight: 700;
-    color: var(--primary);
+    color: var(--primary-logo-text);
 }
 
 .logo__txt span {
-    color: var(--secondary);
+    color: var(--secondary-logo-text);
 }
 
 .right-content
@@ -227,29 +227,40 @@ header {
 
 .btn-login {
     padding: .7em 1.5em;
-    background: var(--primary);
+    background: var(--primary-btn);
     color: var(--white);
     font-family: var(--inter);
     font-size: 1em;
     font-weight: 500;
     border-radius: 18px;
-    box-shadow: 0px 5px 60px var(--primary);
+    box-shadow: 0px 5px 60px var(--primary-btn);
 
 }
 
 .btn-login:hover {
-    background: var(--secondary);
-    box-shadow: 0px 5px 60px var(--secondary);
+    background: var(--secondary-btn);
+    box-shadow: 0px 5px 60px var(--secondary-btn);
 }
 
 .theme-toggler
 {
     display: flex;
     align-items: center;
-    padding: .7em;
-    color: var(--dark-gray);
+    padding: .3em;
+    margin-left: 10px;
+    color: var(--white);
     font-family: var(--inter);
-    font-size: 1.6em;
+    font-size: 1.7em;
+    --ionicon-stroke-width: 30px;
+    background:var(--primary-btn);
+    border-radius: 50%;
+    box-shadow: 0px 5px 60px var(--primary-btn);
+}
+
+.theme-toggler:hover
+{
+    background: var(--secondary-btn);
+    box-shadow: 0px 5px 60px var(--secondary-btn);    
 }
 
 
@@ -313,7 +324,7 @@ ul.side__navbar a li {
 }
 
 ul.side__navbar a li:hover {
-    background: var(--primary);
+    background: var(--primary-btn);
     color: var(--white);
     border-radius: 12px;
 }
@@ -377,7 +388,7 @@ ul.side__navbar a li ion-icon {
 }
 
 .dropdown-btn:hover {
-    background: var(--primary);
+    background: var(--primary-btn);
     color: var(--white);
 }
 
@@ -387,7 +398,7 @@ ul.side__navbar a li ion-icon {
 }
 
 .dropdown-content a:hover {
-    background: var(--secondary);
+    background: var(--secondary-btn);
     color: var(--white);
     border-radius: 5px;
 }
@@ -513,20 +524,20 @@ ul.side__navbar a li ion-icon {
 .btn-register {
     margin: 30px;
     padding: 1em 3.2em;
-    background: var(--primary);
+    background: var(--secondary-btn);
     color: var(--white);
     font-family: var(--inter);
     font-size: 1.2em;
     font-weight: 500;
     text-transform: capitalize;
     border-radius: 18px;
-    box-shadow: 0px 0px 50px var(--primary);
+    box-shadow: 0px 0px 50px var(--secondary-btn);
     white-space: nowrap;
 }
 
 .btn-register:hover {
-    background: var(--secondary);
-    box-shadow: 0px 0px 50px var(--secondary);
+    background: var(--primary-btn);
+    box-shadow: 0px 0px 50px var(--primary-btn);
     cursor: pointer;
 }
 
@@ -612,7 +623,7 @@ ul.side__navbar a li ion-icon {
 
 .card__container .card:hover,
 .card:first-child {
-    background: var(--light-gray);
+    background: var(--hover-light-gray);
 }
 
 .card__container .card:hover .card__icon,
@@ -866,6 +877,7 @@ ul.side__navbar a li ion-icon {
     font-size: 1.3em;
     font-weight: 500;
     font-family: var(--inter);
+    color: var(--dark);
     /* color: var(--secondary); */
     /* color: rgba(0, 0, 0, .5); */
 }
@@ -873,9 +885,10 @@ ul.side__navbar a li ion-icon {
 .owner__info p.tags {
     max-width: 400px;
     margin-top: .5em;
+    font-family: var(--roboto);
+    color: var(--dark);
     font-size: 1.1em;
     font-weight: 500;
-    font-family: var(--inter);
 }
 
 .owner__info p.tags span {
@@ -1084,7 +1097,7 @@ p.title span.badge {
     top: 50%;
     right: 0%;
     transform: translate(-50%,-0%);
-    background: var(--primary);
+    background: var(--primary-btn);
     color: var(--white);
     padding: 10px;
     font-size: 2em;
@@ -1099,10 +1112,10 @@ p.title span.badge {
 {  
     position: absolute;
     top: 50%;
-    left: 4%;
+    left: 5%;
     transform: translate(-50%,-5%);
     padding: 10px;
-    background: var(--secondary);
+    background: var(--secondary-btn);
     font-size: 2em;
     color: var(--white);
     display: grid;
@@ -1139,7 +1152,7 @@ p.title span.badge {
 
 .testimonial p.title {
     margin-top: .1em;
-    padding: 2em 0em;
+    padding: .5em 0em 1em;
     font-family: var(--roboto);
     color: var(--primary);
     font-size: 2em;
@@ -1219,7 +1232,7 @@ p.title span.badge {
     position: absolute;
     top: 80%;
     right: 10%;
-    background: var(--primary);
+    background: var(--primary-btn);
     opacity: .8;
     color: var(--white);
     padding: 10px;
@@ -1237,7 +1250,7 @@ p.title span.badge {
     top: 80%;
     left: 75%;
     padding: 10px;
-    background:var(--secondary);
+    background:var(--secondary-btn);
     opacity: .8;
     font-size: 2em;
     color: var(--white);
@@ -1277,7 +1290,7 @@ p.title span.badge {
         right: 5%;
         background: rgba(0, 0, 0, .2);
         backdrop-filter: blur(30px);
-        color: var(--primary);
+        color: var(--primary-btn);
     }
 
     .prev_btn {
@@ -1286,7 +1299,7 @@ p.title span.badge {
         left: 5%;
         background: rgba(0, 0, 0, .4);
         backdrop-filter: blur(30px);
-        color: var(--secondary);
+        color: var(--secondary-btn);
     }
 }
 
