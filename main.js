@@ -192,6 +192,7 @@ themeTogglerBtn.addEventListener("click", ()=>{
         themeToggler.setAttribute("href","./css/light.css");
         themeTogglerBtn.firstChild.setAttribute("name","moon-outline");
         descSection.style.background="url('../images/bg.png') no-repeat";
+        descSection.style.backgroundPosition="center center";
         heroImsage.setAttribute("src","./images/hero_image.png");
     }
 })
@@ -199,12 +200,12 @@ themeTogglerBtn.addEventListener("click", ()=>{
 
 // coder for page title
 setInterval(()=>{
-    if(document.title=="Coder Community")
+    if(document.title=="1 New Message")
     {
-        document.title="1 New Message";
+        document.title="Coder Community";
     }
     else
     {
-        document.title="Coder Community"; 
+        document.title1="New Message"; 
     }
 },1000)

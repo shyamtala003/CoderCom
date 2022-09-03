@@ -564,7 +564,8 @@ ul.side__navbar a li ion-icon {
     flex-direction: column;
     align-items: flex-start;
     justify-content: center;
-    background: url('../images/bg.png') no-repeat;
+    background: none;
+    background-repeat: no-repeat;
     background-size: cover;
     background-position: center center;
     font-family: var(--roboto);
