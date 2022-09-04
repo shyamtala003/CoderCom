@@ -1318,6 +1318,7 @@ p.title span.badge {
     padding-inline: 5%;
     display: grid;
     grid-template-columns: repeat(12, 1fr);
+    gap: 2em;
 }
 
 .faq__image {
@@ -1383,6 +1384,10 @@ p.title span.badge {
 }
 
 @media screen and (max-width:1280px) {
+    .FAQ
+    {
+        gap: 2em;
+    }
     .faq__image {
         grid-column: 1/13;
         display: grid;
