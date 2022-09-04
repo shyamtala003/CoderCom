@@ -805,7 +805,7 @@ ul.side__navbar a li ion-icon {
 
 .icons {
     position: absolute;
-    bottom: 0;
+    bottom: -1%;
     width: 100%;
     padding: .6em;
     background: rgba(0, 0, 0, .4);
