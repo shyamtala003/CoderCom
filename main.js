@@ -136,7 +136,7 @@ var swiper = new Swiper(".mySwiper2", {
     slidesPerGroup: 3,
     loopFillGroupWithBlank: true,
     loop: true,
-    
+    allowTouchMove:true,
 
     navigation: {
         nextEl: ".next_btn",
@@ -175,25 +175,24 @@ QAN.forEach(Element=>{
 let themeToggler= document.getElementById('theme__toggler');
 let themeTogglerBtn=document.getElementById('theme__toggler__btn');
 let descSection=document.querySelector(".community__desc p.title");
-let heroImsage=document.getElementById('hero__img');
+let heroImage=document.getElementsByClassName('hero__img');
 let logo = document.getElementById('header_logo');
-
 
 themeTogglerBtn.addEventListener("click", ()=>{
 
     if(themeToggler.getAttribute("href")=="./css/light.css")
     {
         themeToggler.setAttribute("href","./css/dark.css");
-        themeTogglerBtn.firstChild.setAttribute("name","sunny-outline");
+        themeTogglerBtn.firstElementChild.setAttribute("name","sunny-outline")
+        heroImage[0].setAttribute("src","./images/hero_image_dark.png");
         descSection.style.background="none";
-        heroImsage.setAttribute("src","./images/hero_image_dark.png");
     }else
     {
         themeToggler.setAttribute("href","./css/light.css");
-        themeTogglerBtn.firstChild.setAttribute("name","moon-outline");
+        themeTogglerBtn.firstElementChild.setAttribute("name","moon-outline");
+        heroImage[0].setAttribute("src","./images/hero_image.png");
         descSection.style.background="url('../images/bg.png') no-repeat";
         descSection.style.backgroundPosition="center center";
-        heroImsage.setAttribute("src","./images/hero_image.png");
     }
 })
 
