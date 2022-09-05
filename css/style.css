@@ -488,6 +488,7 @@ ul.side__navbar a li ion-icon {
     background: var(--hero-bg);
     padding: 2em 2.5em 1em 2.5em;
     border-radius: 5px;
+    backdrop-filter: blur(25px);
 }
 
 .hero__txt p.title {
@@ -699,6 +700,10 @@ ul.side__navbar a li ion-icon {
 
 @media screen and (max-width:1400px) {
 
+    .community__desc {
+        margin-top: 7%;
+        padding-inline: 3%;
+    }
 
     .card__container {
         grid-column: 1/13;
@@ -718,7 +723,7 @@ ul.side__navbar a li ion-icon {
     }
 
     .community__desc {
-        padding-left: 0%;
+        padding-inline: 3%;
     }
 
     .community__desc p.title {
@@ -1121,7 +1126,7 @@ p.title span.badge {
 }
 
 @media screen and (max-width:700px) {
- 
+
     .group__list p.title {
         font-size: 1.8em;
     }
@@ -1317,9 +1322,9 @@ p.title span.badge {
     margin-top: 7%;
     padding-inline: 5%;
     display: grid;
-    min-width:100%;
+    min-width: 100%;
     grid-template-columns: repeat(12, 1fr);
-        /* gap: 2em;
+    /* gap: 2em;
         overflow:hidden; */
 }
 
@@ -1387,7 +1392,7 @@ p.title span.badge {
 }
 
 @media screen and (max-width:1280px) {
- 
+
     .faq__image {
         grid-column: 1/13;
         display: grid;

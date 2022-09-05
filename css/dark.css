@@ -5,33 +5,33 @@
     --dark: #dcdcdd;
     --dark-gray: #dcdcdcea;
     --light-gray: #dcdcdcc5;
-    --hover-light-gray:rgba(255,255,255,.1);
-    --back_circle_1:radial-gradient(218.51% 281.09% at 100% 100%, rgba(253, 63, 51, 0.6) 0%, rgba(76, 0, 200, 0.6) 45.83%, rgba(76, 0, 200, 0.6) 100%);
-    --back_circle_2:linear-gradient(rgb(117, 224, 230) 0%, rgb(57, 19, 184) 100%);
+    --hover-light-gray: rgba(255, 255, 255, .1);
+    --back_circle_1: radial-gradient(218.51% 281.09% at 100% 100%, rgba(253, 63, 51, 0.6) 0%, rgba(76, 0, 200, 0.6) 45.83%, rgba(76, 0, 200, 0.6) 100%);
+    --back_circle_2: linear-gradient(rgb(117, 224, 230) 0%, rgb(57, 19, 184) 100%);
 
-    
-    --primary-btn:#4b56e4;
-    --secondary-btn:#25cca9;
 
-    --primary-logo-text:#1cfeff;
-    --secondary-logo-text:#29b2ff;
+    --primary-btn: #4b56e4;
+    --secondary-btn: #25cca9;
+
+    --primary-logo-text: #1cfeff;
+    --secondary-logo-text: #29b2ff;
 
 
     --bg: rgb(16 20 38);
-    --hero-bg:rgba(0,0,0,.2);
+    --hero-bg: rgba(0, 0, 0, 0.103);
     --blur: 150px;
 
     --padding-x: 5%;
 
     --border: rgb(255 255 255 / 20%);
 
-    --bg-3:rgba(0, 0, 0, .1);
-    --bg-4:rgba(0, 0, 0, .3);
-    --bg-5:rgba(34, 43, 69, 0.731);
-    --bg-7:rgba(0, 0, 0, 0.272);
+    --bg-3: rgba(0, 0, 0, .1);
+    --bg-4: rgba(0, 0, 0, .3);
+    --bg-5: rgba(34, 43, 69, 0.731);
+    --bg-7: rgba(0, 0, 0, 0.272);
 
-    --modal-close-bg:#6f67782b;
-    --nav-icon-bg:#6f67782b;
+    --modal-close-bg: #6f67782b;
+    --nav-icon-bg: #6f67782b;
 
     --modal-btn-bg: rgba(24, 30, 48, 0.491);
 
