@@ -12,6 +12,11 @@ let mainPages = [{
         pageName: "events",
         icon: "calendar-outline",
         link: "#"
+    },
+    {
+        pageName: "settings",
+        icon: "settings-outline",
+        link: "#"
     }
 ]
 

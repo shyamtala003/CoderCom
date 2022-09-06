@@ -28,6 +28,9 @@
     --modal-close-bg: #ffffff;
     --nav-icon-bg: #ffffff;
 
+    --bottom-navbar-bg:rgba(255, 255, 255, 0.5);
+    --nav-text-color:#4b56e4;
+
     --padding-x: 5%;
 
     --border: #aeaeb58c;

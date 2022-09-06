@@ -4,7 +4,7 @@
 ###### I'm Shyam, a CE student and creative coder and self-proclaimed designer. I make it my mission to translate user-focused designs into pixel-perfect websites.
 
 
-<video src="./screentshots/coder community_free.mp4" width="100%" loop="true" autoplay="true"></video>
+<img src="./screentshots/codercom.gif" width="100%"></img>
 
 ![](./screentshots/sq1.png)
 ![](./screentshots/sq2.png)

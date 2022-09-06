@@ -192,6 +192,8 @@ header {
 
 #menu__icon {
     display: none;
+    width: 30px;
+    cursor: pointer;
 }
 
 .logo {
@@ -258,6 +260,126 @@ header {
 .theme-toggler:hover {
     background: var(--secondary-btn);
     box-shadow: 0px 5px 60px var(--secondary-btn);
+}
+
+@media screen and (max-width:700px){
+    header
+    {
+        padding: 10px var(--padding-x);
+    }
+    
+    .logo__image
+    {
+        width:30px;
+    }
+
+    .btn-login {
+        padding: .7em 1.4em;
+        background: var(--primary-btn);
+        color: var(--white);
+        font-family: var(--inter);
+        font-size: .7em;
+        font-weight: 500;
+        border-radius: 18px;
+        box-shadow: 0px 2.5px 30px var(--primary-btn);
+    
+    }
+
+    .theme-toggler {
+        display: flex;
+        align-items: center;
+        padding: .43em;
+        margin-left: 10px;
+        color: var(--white);
+        font-family: var(--inter);
+        font-size: 1em;
+    }
+
+
+}
+
+
+/* bottom navbar only for {small device} */
+.bottom_navbar
+{
+    position: absolute;
+    width: 100%;
+    bottom: 0%;
+    padding-block: .6em;
+    background: var(--bottom-navbar-bg);
+    backdrop-filter: blur(40px);
+    display: none;
+    align-items: center;
+    justify-content: space-around;
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
+    z-index: 18;
+}
+
+.bottom_navbar a
+{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    font-size: 23px;
+    color: var(--light-gray);
+    transition: all .5s ease-in-out;
+}
+
+.bottom_navbar a > ion-icon
+{
+    --ionicon-stroke-width:30px;
+}
+
+.bottom_navbar a.active
+{
+    color: var(--nav-text-color);
+    font-weight: 400;
+}
+
+.bottom_navbar a.active ion-icon
+{
+    --ionicon-stroke-width:45px;
+}
+
+.bottom_navbar a:hover
+{
+    color: var(--secondary-btn);
+    font-weight: 400;
+}
+
+.bottom_navbar a:hover ion-icon
+{
+    --ionicon-stroke-width:45px;
+}
+
+
+a span.nav__text
+{
+    display: none;
+    margin-top: 3px;
+    font-size: .5em;
+    font-family: var(--inter);
+    text-transform: capitalize;
+    transition: hover .5s ease-in-out;
+}
+
+a.active span.nav__text
+{
+    display: inline;
+}
+
+a:hover span.nav__text
+{
+    display: inline;
+}
+
+@media screen and (max-width:700px){
+    .bottom_navbar
+    {
+        display: flex;
+    }
 }
 
 
@@ -411,7 +533,7 @@ ul.side__navbar a li ion-icon {
 
 
     #menu__icon {
-        width: 35px;
+        width: 30px;
         background: var(--nav-icon-bg);
         display: block;
         margin-right: 20px;
