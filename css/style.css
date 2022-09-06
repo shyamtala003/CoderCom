@@ -263,22 +263,13 @@ header {
 }
 
 @media screen and (max-width:700px){
-    header
-    {
-        padding: 10px var(--padding-x);
-    }
-    
-    .logo__image
-    {
-        width:30px;
-    }
 
     .btn-login {
         padding: .7em 1.4em;
         background: var(--primary-btn);
         color: var(--white);
         font-family: var(--inter);
-        font-size: .7em;
+        font-size: .9em;
         font-weight: 500;
         border-radius: 18px;
         box-shadow: 0px 2.5px 30px var(--primary-btn);
@@ -292,7 +283,7 @@ header {
         margin-left: 10px;
         color: var(--white);
         font-family: var(--inter);
-        font-size: 1em;
+        font-size: 1.3em;
     }
 
 
@@ -302,7 +293,7 @@ header {
 /* bottom navbar only for {small device} */
 .bottom_navbar
 {
-    position: absolute;
+    position: fixed;
     width: 100%;
     bottom: 0%;
     padding-block: .6em;
@@ -533,7 +524,7 @@ ul.side__navbar a li ion-icon {
 
 
     #menu__icon {
-        width: 30px;
+        width: 35px;
         background: var(--nav-icon-bg);
         display: block;
         margin-right: 20px;
