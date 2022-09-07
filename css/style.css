@@ -668,11 +668,13 @@ ul.side__navbar a li ion-icon {
 .community__desc {
     margin-top: 7%;
     padding-left: 3%;
+    padding-block:5%;
     text-align: center;
     display: grid;
     place-items: center;
     grid-template-columns: repeat(12, 1fr);
     border-top: 3px solid var(--bg-5);
+    border-bottom: 3px solid var(--bg-5);
 }
 
 .community__desc p.title {
@@ -1448,7 +1450,7 @@ p.title span.badge {
     grid-column: 1/7;
     display: flex;
     flex-direction: row;
-    align-items: flex-start;
+    align-items: center;
     justify-content: start;
 }
 
@@ -1499,7 +1501,7 @@ p.title span.badge {
 .q__and__a .answer {
     max-height: 0px;
     overflow: hidden;
-    transition: max-height 1.2s ease;
+    transition: max-height 1s ease;
     text-align: justify;
 }
 
