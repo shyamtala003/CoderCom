@@ -20,6 +20,11 @@
     width: 0;
 }
 
+::selection
+{
+    color: #000;
+    background: rgb(255, 255, 0);
+}
 
 body {
     position: relative;
@@ -37,7 +42,7 @@ body {
     min-width: 250px;
     transform: translate(-50%, -50%);
     padding: 5%;
-    z-index: 12;
+    z-index: 20;
     display: flex;
     flex-direction: column;
     /* align-items: center; */
@@ -217,10 +222,12 @@ a:hover span.nav__text
 }
 
 @media screen and (max-width:700px){
+    
     .bottom_navbar
     {
         display: flex;
     }
+        
 }
 
 
@@ -350,12 +357,21 @@ header {
 
 @media screen and (max-width:700px){
 
+    header {
+        width: 100vw;
+        padding: 15px var(--padding-x);
+    }
+
+    .logo__image {
+        width: 30px;
+    }
+
     .btn-login {
-        padding: .7em 1.4em;
+        padding: .5em 1.4em;
         background: var(--primary-btn);
         color: var(--white);
         font-family: var(--inter);
-        font-size: .9em;
+        font-size: .8em;
         font-weight: 500;
         border-radius: 18px;
         box-shadow: 0px 2.5px 30px var(--primary-btn);
@@ -365,11 +381,11 @@ header {
     .theme-toggler {
         display: flex;
         align-items: center;
-        padding: .43em;
+        padding: .35em;
         margin-left: 10px;
         color: var(--white);
         font-family: var(--inter);
-        font-size: 1.3em;
+        font-size: 1.1em;
     }
 
 
@@ -527,7 +543,7 @@ ul.side__navbar a li ion-icon {
 
 
     #menu__icon {
-        width: 35px;
+        width: 30px;
         background: var(--nav-icon-bg);
         display: block;
         margin-right: 20px;
@@ -1272,7 +1288,7 @@ p.title span.badge {
     position: relative;
     margin-top: 7%;
     background: var(--bg-5);
-    padding: 3% 5%;
+    padding: 3%;
     background: url('../images/bg.png') no-repeat;
     background-size: 50%;
     background-position: 168% -150%;

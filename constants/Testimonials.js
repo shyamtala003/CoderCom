@@ -1,25 +1,25 @@
 let card = [{
         name: "Hitesh Choudhary",
         profession: "Co-founder LCO",
-        image: "./images/hitesh_sir_1.png",
+        image: "./images/testimonials/hitesh_sir_1.png",
         testimonialDesc: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Error in labore facere dolores, autem placeat iusto. Porro, voluptas quo? Non quasi cum aperiam ratione accusamus sit, praesentium sint ex ipsam?",
     },
     {
         name: "Patrick Akil",
         profession: "Software Engineer",
-        image: "./images/beyond_coding.png",
+        image: "./images/testimonials/beyond_coding.png",
         testimonialDesc: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Error in labore facere dolores, autem placeat iusto. Porro, voluptas quo? Non quasi cum aperiam ratione accusamus sit, praesentium sint ex ipsam?",
     },
     {
         name: "Kevin Powell",
         profession: "CSS Evangelist",
-        image: "./images/webdev.png",
+        image: "./images/testimonials/webdev.png",
         testimonialDesc: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Error in labore facere dolores, autem placeat iusto. Porro, voluptas quo? Non quasi cum aperiam ratione accusamus sit, praesentium sint ex ipsam?",
     },
     {
         name: "Jessica Chan",
         profession: "Web Developer",
-        image: "./images/wes_bos.png",
+        image: "./images/testimonials/wes_bos.png",
         testimonialDesc: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Error in labore facere dolores, autem placeat iusto. Porro, voluptas quo? Non quasi cum aperiam ratione accusamus sit, praesentium sint ex ipsam?",
     },
 
