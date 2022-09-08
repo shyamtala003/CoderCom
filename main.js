@@ -202,3 +202,11 @@ setInterval(() => {
         document.title = "Coder Community";
     }
 }, 1000)
+
+
+// script for preloader
+let preloader= document.getElementById('preloader');
+
+window.addEventListener("load",()=>{
+    preloader.style.display="none";
+})
