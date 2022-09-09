@@ -1709,16 +1709,23 @@ img.app__mockup {
 }
 
 @media screen and (max-width:700px) {
-    .app {
-        gap: 2rem;
+    .app
+    {
+        padding-top: 4em;
     }
 
     .app__content {
         grid-column: 1/14;
     }
 
-    .app__mockup {
+        .app__mockup {
+            margin-top: 2em;
         grid-column: 1/13;
+    }
+
+    .app__content p.title
+    {
+        font-size: 2.5rem;
     }
 }
 
