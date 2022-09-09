@@ -176,6 +176,7 @@ let themeTogglerBtn = document.getElementById('theme__toggler__btn');
 let descSection = document.querySelector(".community__desc p.title");
 let heroImage = document.getElementsByClassName('hero__img');
 let logo = document.getElementById('header_logo');
+let appMockupImage= document.getElementById('app__mockup');
 
 themeTogglerBtn.addEventListener("click", () => {
 
@@ -184,12 +185,14 @@ themeTogglerBtn.addEventListener("click", () => {
         themeTogglerBtn.firstElementChild.setAttribute("name", "sunny-outline")
         heroImage[0].setAttribute("src", "./images/hero_image_dark.png");
         descSection.style.background = "none";
+        appMockupImage.setAttribute("src","./images/iphone_dark.png");
     } else {
         themeToggler.setAttribute("href", "./css/light.css");
         themeTogglerBtn.firstElementChild.setAttribute("name", "moon-outline");
         heroImage[0].setAttribute("src", "./images/hero_image.png");
         descSection.style.background = "url('../images/bg.png') no-repeat";
         descSection.style.backgroundPosition = "center center";
+        appMockupImage.setAttribute("src","./images/iphone_light.png");
     }
 })
 
