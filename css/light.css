@@ -37,6 +37,8 @@
 
     --modal-btn-bg: rgba(255, 255, 255, 0.491);
 
+    --card--bg:linear-gradient(to bottom right,#25cca888,#4b55e476);
+
     --inter: 'Inter', sans-serif;
     --roboto: 'Roboto', sans-serif;
 

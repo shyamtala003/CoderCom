@@ -205,8 +205,25 @@ setInterval(() => {
 
 
 // script for preloader
-let preloader= document.getElementById('preloader');
+let preloader = document.getElementById('preloader');
 
-window.addEventListener("load",()=>{
-    preloader.style.display="none";
+window.addEventListener("load", () => {
+    preloader.style.display = "none";
+})
+
+
+// script for live session image changes
+let meetingImage = document.getElementById('meeting_img');
+
+if (document.body.clientWidth <= 700) {
+    meetingImage.setAttribute("src", "../images/meeting_app.png");
+}
+
+window.addEventListener("resize", () => {
+    if (document.body.clientWidth <= 700) {
+        meetingImage.setAttribute("src", "../images/meeting_app.png");
+    }else
+    {
+        meetingImage.setAttribute("src", "../images/meeting_web.png")
+    }
 })
