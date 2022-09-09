@@ -1572,22 +1572,65 @@ footer .footer__logo {
     align-items: center;
     justify-content: center;
     font-family: var(--inter);
-    font-size: 1em;
+    font-size: 1.3em;
     font-weight: 600;
     color: var(--primary);
 }
 
 .footer__logo img {
-    width: 25px;
+    width:35px;
     margin-right: 5px;
 }
 
 .footer__links {
     margin-top: 1em;
+    display: flex;
+    flex-wrap: wrap ;
+    align-items: center;
+    justify-content: center;
+    gap: 5px;
 }
 
 .footer__links a {
     color: var(--dark);
     font-size: 1em;
     font-family: var(--roboto);
+}
+
+.footer__tag__line
+{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    margin-top: .8em;
+    color: var(--dark);
+    font-family: var(--roboto);
+}
+
+.footer__tag__line span
+{
+    display: flex;
+    align-items: center;
+    gap: 5px;
+}
+
+.footer__tag__line span:last-child img
+{
+    width: 80px;
+    height: 28px;
+}
+
+.footer__tag__line ion-icon
+{
+    color: #ff0000;
+}
+
+@media screen and (max-width:700px){
+   .footer__tag__line
+   {
+    margin-bottom: 30px;
+   }
 }
