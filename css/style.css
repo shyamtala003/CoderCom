@@ -57,6 +57,7 @@ body {
     color: var(--white);
     background: transparent;
     backdrop-filter: blur(45px);
+    -webkit-backdrop-filter: blur(45px);
     border: 5px solid var(--modal-btn-bg);
     border-radius: 20px;
     transition: all .5s ease-in-out;
@@ -93,6 +94,7 @@ body {
     border-radius: 10px;
     background: var(--modal-btn-bg);
     backdrop-filter: blur(100px);
+    -webkit-backdrop-filter: blur(100px);
     display: flex;
     justify-content: start;
     align-items: center;
@@ -159,6 +161,7 @@ body {
     padding-block: .6em;
     background: var(--bottom-navbar-bg);
     backdrop-filter: blur(40px);
+    -webkit-backdrop-filter: blur(40px);
     display: none;
     align-items: center;
     justify-content: space-around;
@@ -234,6 +237,7 @@ a:hover span.nav__text {
     height: 100vh;
     background: var(--bg);
     backdrop-filter: blur(60px);
+    -webkit-backdrop-filter: blur(60px);
     overflow: hidden;
     z-index: 1;
 
@@ -549,6 +553,7 @@ ul.side__navbar a li ion-icon {
         background: var(--bg-7);
 
         backdrop-filter: blur(10px);
+        -webkit-backdrop-filter: blur(10px);
         transition: all .5s ease-in-out;
         z-index: 1;
     }
@@ -607,6 +612,7 @@ ul.side__navbar a li ion-icon {
     padding: 2em 2.5em 1em 2.5em;
     border-radius: 5px;
     backdrop-filter: blur(25px);
+    -webkit-backdrop-filter: blur(25px);
 }
 
 .hero__txt p.title {
@@ -712,6 +718,7 @@ ul.side__navbar a li ion-icon {
     border-radius: 10px;
     background: var(--bg-4);
     backdrop-filter: blur(200px);
+    -webkit-backdrop-filter: blur(200px);
 }
 
 .community__desc p.title span:last-child {
@@ -721,6 +728,7 @@ ul.side__navbar a li ion-icon {
     border-radius: 10px;
     color: var(--secondary);
     backdrop-filter: blur(200px);
+    -webkit-backdrop-filter: blur(200px);
 }
 
 
@@ -735,6 +743,7 @@ ul.side__navbar a li ion-icon {
     padding: 4em 2.5em;
     background: var(--bg-7);
     backdrop-filter: blur(150px);
+    -webkit-backdrop-filter: blur(150px);
     border: 2px solid rgba(255, 255, 255, .3);
     overflow: hidden;
 }
@@ -913,6 +922,7 @@ img.meeting_img {
     grid-column: 1/13;
     width: 100%;
     backdrop-filter: blur(100px);
+    -webkit-backdrop-filter: blur(100px);
     border-radius: 20px;
 }
 
@@ -1021,6 +1031,7 @@ li.point p.desc {
     font-family: var(--roboto);
     background: rgba(0, 0, 0, .4);
     backdrop-filter: blur(40px);
+    -webkit-backdrop-filter: blur(40px);
 }
 
 .icons {
@@ -1030,6 +1041,7 @@ li.point p.desc {
     padding: .6em;
     background: rgba(0, 0, 0, .4);
     backdrop-filter: blur(40px);
+    -webkit-backdrop-filter: blur(40px);
     text-align: center;
     border-top-left-radius: 20px;
     border-top-right-radius: 20px;
@@ -1201,6 +1213,7 @@ p.title span.badge {
     padding: .7em .5em;
     cursor: pointer;
     backdrop-filter: blur(100px);
+    -webkit-backdrop-filter: blur(100px);
     overflow: hidden;
 }
 
@@ -1518,6 +1531,7 @@ p.title span.badge {
         right: 5%;
         background: rgba(0, 0, 0, .2);
         backdrop-filter: blur(30px);
+        -webkit-backdrop-filter: blur(30px);
         color: var(--primary-btn);
     }
 
@@ -1527,6 +1541,7 @@ p.title span.badge {
         left: 5%;
         background: rgba(0, 0, 0, .4);
         backdrop-filter: blur(30px);
+        -webkit-backdrop-filter: blur(30px);
         color: var(--secondary-btn);
     }
 }
