@@ -28,7 +28,7 @@ let faq = [{
 let faqContent = document.querySelector(".faq__content");
 
 faq.forEach((Element) => {
-    faqContent.innerHTML += `<div class="q__and__a">
+    faqContent.innerHTML += `<div class="q__and__a  animation__pause">
     <p class="question"><span>${Element.question}</span><ion-icon name="chevron-down-outline" class="down"></ion-icon></p>
     <p class="answer">${Element.answer}<p>
     </div>`;

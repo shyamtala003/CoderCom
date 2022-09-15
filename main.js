@@ -230,3 +230,21 @@ window.addEventListener("resize", () => {
         meetingImage.setAttribute("src", "../images/meeting_web.png")
     }
 })
+
+
+// animation on scroll script
+
+const observer = new IntersectionObserver((entries) => {
+    entries.forEach((entry) => {
+        console.log(entries);
+        if(entry.isIntersecting)
+        {
+            entry.target.classList.add("animation__play")
+        } else {
+            entry.target.classList.remove("animation__play")
+        }
+    })
+})
+
+const animationPauseElement = document.querySelectorAll(".animation__pause");
+animationPauseElement.forEach((el) => observer.observe(el));

@@ -38,6 +38,22 @@ body {
     height: 100vh;
 }
 
+/* code for aniamtion on scroll */
+.animation__pause
+{
+    opacity: 0;
+    filter: blur(10px);
+    translate: -110% 0%;
+    transition: all 1.4s;
+}
+
+.animation__play
+{
+    opacity: 1;
+    filter: blur(0px);
+    translate: 0% 0%;
+}
+
 
 
 /* modal */

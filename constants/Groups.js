@@ -115,7 +115,7 @@ group.forEach((Element) => {
     groupWrapper.innerHTML +=
         `   
     <div class="swiper-slide">
-        <div class="card">
+        <div class="card animation__pause">
             <div class="card__image">
                 <img src=${Element.groupCoverImage} alt="">
             </div>

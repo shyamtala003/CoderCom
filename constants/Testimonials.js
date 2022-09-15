@@ -37,7 +37,7 @@ card.forEach((Element) => {
     <div class="testimonial__image">
     <img src=${Element.image} alt="">
     </div>
-    <div class="testimonial__cotent">
+    <div class="testimonial__cotent animation__pause">
     <img src="./images/“.png" alt="">
     <p class="testimonial__desc">${Element.testimonialDesc}</p>
     <p class="name">${Element.name}</p>
