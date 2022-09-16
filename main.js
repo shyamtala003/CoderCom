@@ -236,7 +236,6 @@ window.addEventListener("resize", () => {
 
 const observer = new IntersectionObserver((entries) => {
     entries.forEach((entry) => {
-        console.log(entries);
         if(entry.isIntersecting)
         {
             entry.target.classList.add("animation__play")
