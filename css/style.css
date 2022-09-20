@@ -44,7 +44,7 @@ body {
     opacity: 0;
     filter: blur(10px);
     translate: -110% 0%;
-    transition: all 1.4s;
+    transition: all 0.7s;
 }
 
 .animation__play
