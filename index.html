@@ -1,360 +1,440 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
-
-
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta
+      name="description"
+      content="coder,community,programmer group,solve your doubt"
+      <meta
+      charset="UTF-8"
+    />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <!--📌 favicon {<>} 📌-->
-    <link rel="shortcut icon" href="./images/favicon.ico" type="image/x-icon">
-    
+    <link rel="shortcut icon" href="./images/favicon.ico" type="image/x-icon" />
+
     <!--📌 swiper.js style 📌-->
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css" />
+    <!-- <link rel="stylesheet" href="./cdns_files/swiper-bundle.min.css" /> -->
+
+    <link
+      rel="preload"
+      href="./cdns_files/swiper-bundle.min.css"
+      as="style"
+      onload="this.onload=null;this.rel='stylesheet'"
+    />
+    <noscript
+      ><link rel="stylesheet" href="./cdns_files/swiper-bundle.min.css"
+    /></noscript>
 
     <!--📌 stylesheet for light/dark mod  📌-->
-    <link rel="stylesheet" href="./css/dark.css" id="theme__toggler">
+    <link
+      rel="preload"
+      href="./css/dark.css"
+      id="theme__toggler"
+      as="style"
+      onload="this.onload=null;this.rel='stylesheet'"
+    />
+    <noscript
+      ><link rel="stylesheet" href="./css/dark.css" id="theme__toggler"
+    /></noscript>
 
     <!--📌 general stylesheet 📌-->
-    <link rel="stylesheet" href="./css/style.css">
-
+    <link rel="stylesheet" href="./css/style.css" />
+    <link
+      rel="preload"
+      href="./css/style.css"
+      as="style"
+      onload="this.onload=null;this.rel='stylesheet'"
+    />
+    <noscript><link rel="stylesheet" href="./css/style.css" /></noscript>
 
     <title>Coder Community</title>
+  </head>
 
-
-</head>
-
-<body>
-
-
-    <div id="preloader">
-
-    </div>
+  <body>
+    <!-- <div id="preloader"></div> -->
 
     <!-- modal for login -->
     <div id="modal-login" class="modal-login">
-        <img src="./images/close.png" alt="" id="modal__close">
-        <img src="./images/logo.png" width="60px" alt="" class="logo">
-        <p id="modal-title">login</p>
-        <a href="#">
-            <ion-icon name="call-outline"></ion-icon> Continue with Mobile
-        </a>
-        <a href="#">
-            <ion-icon name="mail-outline"></ion-icon> Continue with Email
-        </a>
-        <a href="#"><img src="./images/google-logo.svg" alt=""> Start with Google</a>
-        <a href="#"><img src="./images/facebook-logo.svg" alt=""> Start with Facebook</a>
-        <button id="modal-btn "><span id="modal-btn-text">Already have an account? </span><span
-                id="text-toggle">Login</span></button>
+      <img src="./images/close.webp" alt="" id="modal__close" />
+      <img src="./images/logo.webp" width="60px" alt="" class="logo" />
+      <p id="modal-title">login</p>
+      <a href="#" aria-label="enter mobile number">
+        <ion-icon name="call-outline"></ion-icon> Continue with Mobile
+      </a>
+      <a href="#" aria-label="enter email address">
+        <ion-icon name="mail-outline"></ion-icon> Continue with Email
+      </a>
+      <a href="#" aria-label="google authentication"
+        ><img src="./images/google-logo.svg" alt="" /> Start with Google</a
+      >
+      <a href="#" aria-label="facebook authentication"
+        ><img src="./images/facebook-logo.svg" alt="" /> Start with Facebook</a
+      >
+      <button id="modal-btn ">
+        <span id="modal-btn-text">Already have an account? </span
+        ><span id="text-toggle">Login</span>
+      </button>
     </div>
-
 
     <!-- bottom navbar for small screen devices -->
     <div class="bottom_navbar">
-        <script src="./constants/Bottom_NavBar.js"></script>
+      <script src="./constants/Bottom_NavBar.js"></script>
     </div>
 
     <!-- container -->
     <div class="container">
+      <!-- header -->
+      <header id="header">
+        <div class="left-content">
+          <div class="logo">
+            <img src="./images/nav-icon.webp" id="menu__icon" alt="" />
+            <!-- <ion-icon name="menu-outline" id="menu__icon"></ion-icon> -->
+            <img
+              src="./images/logo.webp"
+              alt="logo"
+              class="logo__image"
+              id="header_logo"
+            />
+            <span class="logo__txt">Coder <span>Community</span></span>
+          </div>
+        </div>
 
-        <!-- header -->
-        <header id="header">
-            <div class="left-content">
-                <div class="logo">
-                    <img src="./images/nav-icon.png" id="menu__icon" alt="">
-                    <!-- <ion-icon name="menu-outline" id="menu__icon"></ion-icon> -->
-                    <img src="./images/logo.png" alt="logo" class="logo__image" id="header_logo">
-                    <span class="logo__txt">Coder <span>Community</span></span>
+        <div class="right-content">
+          <a
+            href="#"
+            class="btn-login card__btn"
+            id="login-btn"
+            aria-label="click to login"
+            >Login</a
+          >
+          <a
+            href="#"
+            class="theme-toggler"
+            id="theme__toggler__btn"
+            aria-label="toggle the theme"
+          >
+            <ion-icon name="sunny-outline"></ion-icon>
+          </a>
+        </div>
+      </header>
+
+      <main>
+        <!-- sidebar -->
+        <div class="sidebar" id="sidebar">
+          <ul class="side__navbar">
+            <script src="./constants/NavBar.js"></script>
+          </ul>
+
+          <ul class="side__navbar">
+            <p>Groups</p>
+
+            <script src="./constants/SideBar_Groups.js"></script>
+          </ul>
+        </div>
+
+        <!--content section  -->
+        <section class="content" id="content">
+          <!-- hero section -->
+          <section class="hero__section">
+            <img
+              src="./images/hero_image_dark.webp"
+              class="hero__img"
+              id="hero__img"
+              alt=""
+            />
+
+            <div class="hero__txt">
+              <p class="title">
+                <span>Learn From Anywhere </span><span>Get Help Here</span>
+              </p>
+              <p class="desc">
+                Welcome to coder community. You might be learning from any
+                place, company or resource, we are here to help you. Post any of
+                your doubt and there are other fellow coders along with our team
+                to solve your doubts.
+              </p>
+              <center>
+                <button class="btn-register card__btn" id="join-btn">
+                  join now
+                </button>
+              </center>
+            </div>
+          </section>
+
+          <!-- Community Description section -->
+          <section class="community__desc">
+            <p class="title">
+              A better way to <span>resolve</span> your <span>doubts</span>
+            </p>
+            <div class="card__container">
+              <div class="card">
+                <div class="card__icon">
+                  <ion-icon name="code-slash"></ion-icon>
                 </div>
+                <p class="card__title">Stuck in your code ?</p>
+                <p class="card__desc">
+                  Post your quesries into the desired group and get instant
+                  support from developers
+                </p>
+              </div>
+
+              <div class="card">
+                <div class="card__icon">
+                  <ion-icon name="school"></ion-icon>
+                </div>
+                <p class="card__title">Learn from Anywhere | Get Help Here</p>
+                <p class="card__desc">
+                  No matter from where you are learning from ? If yout get stuck
+                  in your code, come here and get resolved.
+                </p>
+              </div>
+
+              <div class="card">
+                <div class="card__icon">
+                  <ion-icon name="people"></ion-icon>
+                </div>
+                <p class="card__title">Answers From Community</p>
+                <p class="card__desc">
+                  Get answers quickly from your desired community, like
+                  JAVASCRIPT Community, etc
+                </p>
+              </div>
+
+              <div class="card">
+                <div class="card__icon">
+                  <ion-icon name="phone-portrait"></ion-icon>
+                </div>
+                <p class="card__title">Mobile Application</p>
+                <p class="card__desc">
+                  Get Notifications quickly on mobile app available on Google
+                  Play Store, Apple Store
+                </p>
+              </div>
+            </div>
+          </section>
+
+          <!-- live sessions sction -->
+          <section class="live__meet">
+            <p class="title">🔴 Live Sessions</p>
+
+            <img
+              src="./images/meeting_web.webp"
+              alt=""
+              class="meeting_img"
+              id="meeting_img"
+            />
+
+            <ul class="brief__points">
+              <li class="point">
+                <p class="title">Immersive Experince</p>
+                <p class="desc">
+                  Conduct Live sessions or webinar, get the best audio video
+                  quality
+                </p>
+              </li>
+              <li class="point">
+                <p class="title">Host Event with Live QnA</p>
+                <p class="desc">
+                  Invite hosts, moderator & get the best live experience for
+                  your commmunity
+                </p>
+              </li>
+              <li class="point">
+                <p class="title">Share your live recordings</p>
+                <p class="desc">
+                  Share or post recording on Youtube, Facebook, Vimeo, or any
+                  other platform
+                </p>
+              </li>
+            </ul>
+          </section>
+
+          <!-- Community Owner/Instructor section -->
+          <section class="owner__details">
+            <div class="card">
+              <div class="owner__image">
+                <p class="designation">Community Admin</p>
+                <div class="icons">
+                  <a href="#" class="icon" aria-label="facebook group"
+                    ><img src="./images/icons8-facebook-48.webp" alt=""
+                  /></a>
+                  <a href="#" class="icon" aria-label="instagram page"
+                    ><img src="./images/icons8-instagram-48.webp" alt=""
+                  /></a>
+                  <a href="#" class="icon" aria-label="linkedin page"
+                    ><img src="./images/icons8-linkedin-circled-48.webp" alt=""
+                  /></a>
+                  <a href="#" class="icon" aria-label="twitter handle"
+                    ><img src="./images/icons8-twitter-48.webp" alt=""
+                  /></a>
+                  <a href="#" class="icon" aria-label="youtube channel"
+                    ><img src="./images/icons8-youtube-48.webp" alt=""
+                  /></a>
+                </div>
+              </div>
+            </div>
+            <div class="owner__info">
+              <p class="name"><span>Hitesh</span> Choidhary</p>
+              <p class="info">
+                Teacher and coder who is trying to solve some problems via
+                <br /><a href="#" aria-label="inueron"
+                  ><img src="./images/ineuron-logo.webp" alt=""
+                /></a>
+                <a href="#"
+                  ><img
+                    src="./images/learneast.webp"
+                    alt=""
+                    aria-label="learneast"
+                /></a>
+                <a href="#"
+                  ><img
+                    src="./images/pencil.webp"
+                    alt=""
+                    aria-label="pencil community"
+                /></a>
+                <a href="#"
+                  ><img
+                    src="./images/findcoder.webp"
+                    aria-label="findcoder"
+                    alt=""
+                /></a>
+              </p>
+              <p class="tags">
+                Talks about <span>#coding</span>, <span>#youtuber</span>,
+                <span>#javascript</span>, <span>#technology</span>,and
+                <span>#programming</span>
+              </p>
+            </div>
+          </section>
+
+          <!-- Group List section -->
+
+          <section class="group__list">
+            <p class="title">
+              Explore <span>Groups</span> <span class="badge">15</span>
+            </p>
+            <div class="swiper mySwiper">
+              <div class="swiper-wrapper">
+                <!-- data comes from given src file -->
+                <script src="./constants/Groups.js"></script>
+              </div>
+              <button class="prev_btn_card">
+                <ion-icon name="arrow-back-circle-outline"></ion-icon>
+              </button>
+              <button class="next_btn_card">
+                <ion-icon name="arrow-forward-circle-outline"></ion-icon>
+              </button>
+            </div>
+          </section>
+
+          <!-- Testimonial section -->
+
+          <section class="testimonial">
+            <p class="title"><span>Test</span>imonial</p>
+
+            <div class="swiper mySwiper2">
+              <div class="swiper-wrapper">
+                <!-- data comes from given src file -->
+                <script src="./constants/Testimonials.js"></script>
+              </div>
+              <button class="prev_btn">
+                <ion-icon name="arrow-back-circle-outline"></ion-icon>
+              </button>
+              <button class="next_btn">
+                <ion-icon name="arrow-forward-circle-outline"></ion-icon>
+              </button>
+            </div>
+          </section>
+
+          <!-- FAQ section -->
+          <section class="FAQ">
+            <div class="faq__image">
+              <img src="./images/faq2.webp" alt="" />
+            </div>
+            <div class="faq__content">
+              <p class="title">Frequently Asked Questions</p>
+
+              <!-- data comes from given src file -->
+              <script src="./constants/F&Q.js"></script>
+            </div>
+          </section>
+
+          <!-- app section -->
+          <section class="app">
+            <div class="app__content">
+              <p class="title">Trust Us,<br /><span>Give it a try!</span></p>
+              <div class="btn__container">
+                <button class="btn btn__playstore">
+                  <img src="./images/play_store.webp" alt="" />
+                  <div class="btn__text">
+                    <p class="small__text">GET IT ON</p>
+                    <p class="large__text">Google Play</p>
+                  </div>
+                </button>
+
+                <button class="btn btn__appstore">
+                  <img src="./images/app_store.webp" alt="" />
+                  <div class="btn__text">
+                    <p class="small__text">Download on the</p>
+                    <p class="large__text">App Store</p>
+                  </div>
+                </button>
+              </div>
             </div>
 
-            <div class="right-content">
-                <a href="#" class="btn-login card__btn" id="login-btn">Login</a>
-                <a href="#" class="theme-toggler" id="theme__toggler__btn">
-                    <ion-icon name="sunny-outline"></ion-icon>
-                </a>
+            <img
+              src="./images/iphone_dark.webp"
+              alt=""
+              class="app__mockup"
+              id="app__mockup"
+            />
+          </section>
+
+          <!-- Footer section -->
+          <footer>
+            <div class="footer__logo">
+              <img src="./images/logo.webp" alt="" /> Coder<span
+                >Community.io</span
+              >
             </div>
-        </header>
-
-
-
-
-        <main>
-
-
-            <!-- sidebar -->
-            <div class="sidebar" id="sidebar">
-
-                <ul class="side__navbar">
-
-                    <script src="./constants/NavBar.js"></script>
-
-                </ul>
-
-
-                <ul class="side__navbar">
-                    <p>Groups</p>
-
-                    <script src="./constants/SideBar_Groups.js"></script>
-
-                </ul>
-
-
-
-
+            <div class="footer__links">
+              <a href="#" aria-label="temrs and coonditions"
+                >Terms and Conditions</a
+              >
+              |
+              <a href="#" aria-label="privacy Policy">Privacy Policy</a>
             </div>
-
-            <!--content section  -->
-            <section class="content" id="content">
-
-                <!-- hero section -->
-                <section class="hero__section">
-
-                    <img src="./images/hero_image_dark.png" class="hero__img" id="hero__img" alt="">
-
-                    <div class="hero__txt">
-                        <p class="title"> <span>Learn From Anywhere </span><span>Get Help Here</span></p>
-                        <p class="desc">Welcome to coder community. You might be learning from any place, company or
-                            resource, we are here to help you. Post any of your doubt and there are other fellow coders
-                            along with our team to solve your doubts.
-                        </p>
-                        <center><button class="btn-register card__btn" id="join-btn">join now</button></center>
-                    </div>
-
-                </section>
-
-                <!-- Community Description section -->
-                <section class="community__desc">
-                    <p class="title">A better way to <span>resolve</span> your <span>doubts</span></p>
-                    <div class="card__container">
-
-                        <div class="card animation__pause">
-                            <div class="card__icon">
-                                <ion-icon name="code-slash"></ion-icon>
-                            </div>
-                            <p class="card__title">Stuck in your code ?</p>
-                            <p class="card__desc">Post your quesries into the desired group and get instant support from
-                                developers</p>
-                        </div>
-
-                        <div class="card animation__pause">
-                            <div class="card__icon">
-                                <ion-icon name="school"></ion-icon>
-                            </div>
-                            <p class="card__title">Learn from Anywhere | Get Help Here</p>
-                            <p class="card__desc">No matter from where you are learning from ? If yout get stuck in your
-                                code, come here and get resolved.</p>
-                        </div>
-
-                        <div class="card animation__pause">
-                            <div class="card__icon">
-                                <ion-icon name="people"></ion-icon>
-                            </div>
-                            <p class="card__title">Answers From Community</p>
-                            <p class="card__desc">Get answers quickly from your desired community, like JAVASCRIPT
-                                Community, etc</p>
-                        </div>
-
-                        <div class="card animation__pause">
-                            <div class="card__icon">
-                                <ion-icon name="phone-portrait"></ion-icon>
-                            </div>
-                            <p class="card__title">Mobile Application</p>
-                            <p class="card__desc">Get Notifications quickly on mobile app available on Google Play
-                                Store, Apple Store</p>
-                        </div>
-                    </div>
-                </section>
-
-
-                <!-- live sessions sction -->
-                <section class="live__meet">
-
-                    <p class="title">🔴 Live Sessions</p>
-
-                    <img src="./images/meeting_web.png" alt="" class="meeting_img" id="meeting_img">
-
-                    <ul class="brief__points">
-                        <li class="point animation__pause">
-                            <p class="title">Immersive Experince</p>
-                            <p class="desc">Conduct Live sessions or webinar, get the best audio video quality</p>
-                        </li>
-                        <li class="point animation__pause">
-                            <p class="title">Host Event with Live QnA</p>
-                            <p class="desc">Invite hosts, moderator & get the best live experience for your commmunity
-                            </p>
-                        </li>
-                        <li class="point animation__pause">
-                            <p class="title">Share your live recordings</p>
-                            <p class="desc">Share or post recording on Youtube, Facebook, Vimeo, or any other platform
-                            </p>
-                        </li>
-                    </ul>
-
-                </section>
-
-                <!-- Community Owner/Instructor section -->
-                <section class="owner__details">
-                    <div class="card animation__pause">
-                        <div class="owner__image">
-                            <p class="designation">Community Admin</p>
-                            <div class="icons">
-                                <a href="#" class="icon"><img src="./images/icons8-facebook-48.png" alt=""></a>
-                                <a href="#" class="icon"><img src="./images/icons8-instagram-48.png" alt=""></a>
-                                <a href="#" class="icon"><img src="./images/icons8-linkedin-circled-48.png" alt=""></a>
-                                <a href="#" class="icon"><img src="./images/icons8-twitter-48.png" alt=""></a>
-                                <a href="#" class="icon"><img src="./images/icons8-youtube-48.png" alt=""></a>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="owner__info animation__pause">
-                        <p class="name">
-                            <span>Hitesh</span> Choidhary
-                        </p>
-                        <p class="info">
-                            Teacher and coder who is trying to solve some problems via <br /><a href="#"><img
-                                    src="./images/ineuron-logo.png" alt=""></a> <a href="#"><img
-                                    src="./images/learneast.png" alt=""></a> <a href="#"><img src="./images/pencil.png"
-                                    alt=""></a> <a href="#"><img src="./images/findcoder.png" alt=""></a>
-                        </p>
-                        <p class="tags">
-                            Talks about <span>#coding</span>, <span>#youtuber</span>, <span>#javascript</span>,
-                            <span>#technology</span>,and <span>#programming</span>
-                        </p>
-
-                    </div>
-                </section>
-
-
-                <!-- Group List section -->
-
-                <section class="group__list">
-                    <p class="title">
-                        Explore <span>Groups</span> <span class="badge">15</span>
-                    </p>
-                    <div class="swiper mySwiper">
-                        <div class="swiper-wrapper">
-
-                            <!-- data comes from given src file -->
-                            <script src="./constants/Groups.js"></script>
-
-                        </div>
-                        <button class="prev_btn_card">
-                            <ion-icon name="arrow-back-circle-outline"></ion-icon>
-                        </button>
-                        <button class="next_btn_card">
-                            <ion-icon name="arrow-forward-circle-outline"></ion-icon>
-                        </button>
-
-                    </div>
-
-                </section>
-
-                <!-- Testimonial section -->
-
-                <section class="testimonial">
-                    <p class="title">
-                        <span>Test</span>imonial
-                    </p>
-
-                    <div class="swiper mySwiper2">
-                        <div class="swiper-wrapper">
-
-                            <!-- data comes from given src file -->
-                            <script src="./constants/Testimonials.js"></script>
-
-                        </div>
-                        <button class="prev_btn">
-                            <ion-icon name="arrow-back-circle-outline"></ion-icon>
-                        </button>
-                        <button class="next_btn">
-                            <ion-icon name="arrow-forward-circle-outline"></ion-icon>
-                        </button>
-                    </div>
-
-
-
-                </section>
-
-
-                <!-- FAQ section -->
-                <section class="FAQ">
-                    <div class="faq__image">
-                        <img src="./images/faq2.png" alt="">
-                    </div>
-                    <div class="faq__content">
-                        <p class="title">Frequently Asked Questions</p>
-
-                        <!-- data comes from given src file -->
-                        <script src="./constants/F&Q.js">
-
-                        </script>
-                    </div>
-
-
-                </section>
-
-                <!-- app section -->
-                <section class="app">
-                    <div class="app__content  animation__pause">
-                        <p class="title">
-                            Trust Us,<br><span>Give it a try!</span>
-                        </p>
-                        <div class="btn__container">
-                            <button class="btn btn__playstore">
-                                <img src="./images/play_store.png" alt="">
-                                <div class="btn__text">
-                                    <p class="small__text">GET IT ON</p>
-                                    <p class="large__text">Google Play</p>
-                                </div>
-                            </button>
-
-                            <button class="btn btn__appstore">
-                                <img src="./images/app_store.png" alt="">
-                                <div class="btn__text">
-                                    <p class="small__text">Download on the</p>
-                                    <p class="large__text">App Store</p>
-                                </div>
-                            </button>
-                        </div>
-                    </div>
-
-                    <img src="./images/iphone_dark.png" alt="" class="app__mockup" id="app__mockup">
-
-                </section>
-
-
-                <!-- Footer section -->
-                <footer>
-                    <div class="footer__logo"><img src="./images/logo.png" alt=""> Coder<span>Community.io</span></div>
-                    <div class="footer__links"><a href="#">Terms and Conditions</a> | <a href="#">Privacy Policy</a>
-                    </div>
-                    <div class="footer__tag__line">
-                        <span>Made with <ion-icon name="heart"> </ion-icon> in <b>India</b></span>
-                        |
-                        <span>Powered by <a href="#"><img src="./images/pencil.png" alt=""></a></span>
-                    </div>
-                </footer>
-
-            </section>
-        </main>
-
-
+            <div class="footer__tag__line">
+              <span
+                >Made with <ion-icon name="heart"> </ion-icon> in
+                <b>India</b></span
+              >
+              |
+              <span
+                >Powered by
+                <a href="#" aria-label="pencil community"
+                  ><img src="./images/pencil.webp" alt=""
+                /></a>
+                <a href="#" aria-label="pensil comm.."
+                  ><img src="./images/pencil.webp" alt="" /></a
+              ></span>
+            </div>
+          </footer>
+        </section>
+      </main>
     </div>
 
-
-
     <!-- 📌ion icon script📌 -->
-    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
-    <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+    <script
+      type="module"
+      src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"
+    ></script>
+    <script nomodule src="./cdns_files/ionicons.js"></script>
 
     <!-- 📌swiper.js cdn📌 -->
-    <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
+    <script src="./cdns_files/swiper-bundle.min.js"></script>
 
     <!-- general script file -->
     <script type="" src="./main.js"></script>
-
-</body>
-
+  </body>
 </html>
